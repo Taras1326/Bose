@@ -1,0 +1,128 @@
+.hero {
+    padding-top: 0;
+    padding-bottom: 52px;
+    @media screen and (min-width:768px){
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width:1280px){
+        padding-bottom: 170px;
+    }
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width:768px){
+            display: flex;
+        flex-direction: row;
+        }
+    
+        @media screen and (min-width:1280px){
+            display: flex;
+        flex-direction: row;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+        @media screen and (min-width:768px){
+          margin-bottom: 105px;
+        }
+    
+        @media screen and (min-width:1280px){
+       margin-bottom: 94px;
+        }
+    }
+
+    &__text {
+        width: 222px;
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17.5px;
+        
+@media screen and (min-width:768px){
+    width: 253px;   
+    font-size: 16px;      
+}
+
+@media screen and (min-width:1280px){
+    font-size: 16px;
+    width: 321px;
+}
+    }
+
+    &__subtext {
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+width: 93px;
+
+@media screen and (min-width:768px){
+    width: 110px;
+    font-size: 16px;
+
+}
+
+@media screen and (min-width:1280px){
+   width: 110px;
+   font-size: 16px;
+}
+    }
+
+    &__title {
+        color: #E7E7E7;
+font-size: 34px;
+font-style: normal;
+font-weight: 600;
+line-height: 34px; /* 34px */
+letter-spacing: 0.68px;
+text-transform: uppercase;
+width: 234px;
+margin-bottom: 32px;
+
+@media screen and (min-width:768px){
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: 0.84px;
+    width: 289px;
+margin-bottom: 40px;
+}
+
+@media screen and (min-width:1280px){
+   width: 674px;
+   font-size: 74px;
+   line-height: 74px;
+   letter-spacing: 1.48px;
+   margin-bottom: 86px;
+    }
+}
+
+&__button {
+    padding: 19px 113px;
+    background: #DF3D3A;
+    color: rgba(255, 255, 255, 0.90);
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.32px;
+text-transform: uppercase;
+border: none;
+    @media screen and (min-width:768px){
+        padding: 19px 114px;
+    
+    }
+    
+    @media screen and (min-width:1280px){
+       padding: 22px 167px;
+       letter-spacing: 0.4px;
+       font-size: 20px;
+    }
+}
+}
