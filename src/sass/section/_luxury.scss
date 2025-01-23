@@ -1,0 +1,106 @@
+.luxury {
+    padding-top: 0;
+    padding-bottom: 32px;
+    @media screen and (min-width:768px){
+       padding-bottom: 100px;
+    }
+    
+    @media screen and (min-width:1280px){
+        padding-bottom: 170px;
+    }
+
+     & .container {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width:768px){
+            
+         }
+         
+         @media screen and (min-width:1280px){
+            
+         }
+     }
+
+    &__title {
+        color: #E7E7E7;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28.8px; /* 28.8px */
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        width: 278px;
+        margin-bottom: 32px;
+
+        @media screen and (min-width:768px){
+            line-height: 36px; /* 36px */
+            letter-spacing: 0.6px;
+            font-size: 30px;
+            width: 347px;
+         }
+         
+         @media screen and (min-width:1280px){
+            line-height: 64.8px; /* 64.8px */
+            letter-spacing: 1.08px;
+            font-size: 54px;
+            width: 644px;
+            margin-bottom: 50px;
+         }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 42px;
+        @media screen and (min-width:768px){
+            flex-direction: row;
+            column-gap: 60px;
+            row-gap: 0;
+        }
+        
+        @media screen and (min-width:1280px){
+           flex-direction: row;
+           column-gap: 40px;
+           row-gap: 0;
+        }
+    }
+
+    &__subtitle {
+        color: #E7E7E7;
+font-size: 20px;
+font-weight: 600;
+line-height: 25px; /* 25px */
+margin-top: 32px;
+
+@media screen and (min-width:768px){
+    
+}
+
+@media screen and (min-width:1280px){
+    font-size: 28px;
+    line-height: 35px; /* 35px */
+    margin-top: 50px;
+}
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.6);
+font-size: 14px;
+font-weight: 400;
+line-height: 17.5px; /* 17.5px */
+width: 280px;
+margin-top: 16px;
+
+@media screen and (min-width:768px){
+    line-height: 23.2px; /* 23.2px */
+    font-size: 16px;
+    width: 294px;
+}
+
+@media screen and (min-width:1280px){
+    font-size: 20px;
+    line-height: 29px; /* 29px */
+    width: 510px;
+}
+   
+    }
+}
