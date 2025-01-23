@@ -1,0 +1,70 @@
+.bose {
+    padding-top: 0;
+    padding-bottom: 52px;
+
+    @media screen and (min-width:768px){
+        padding-bottom: 100px;
+     }
+     
+     @media screen and (min-width:1280px){
+        padding-bottom: 170px;
+     }
+
+     &__title {
+        color: #E7E7E7;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28.8px; /* 28.8px */
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+        @media screen and (min-width:768px){
+            line-height: 36px; /* 36px */
+            letter-spacing: 0.6px;
+            font-size: 30px;
+         }
+         
+         @media screen and (min-width:1280px){
+            line-height: 64.8px; /* 64.8px */
+            letter-spacing: 1.08px;
+            font-size: 54px;
+            margin-bottom: 50px;
+         }
+     }
+
+     &__subtitle {
+        color: #E7E7E7;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px; /* 25px */
+        margin-bottom: 16px;
+        @media screen and (min-width:768px){
+            
+         }
+         
+         @media screen and (min-width:1280px){
+            font-size: 28px;
+            line-height: 35px; /* 35px */
+            margin-bottom: 20px;
+         }
+     }
+
+     &__text {
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.5px ; /* 17.5px */
+        width: 280px;
+        @media screen and (min-width:768px){
+            line-height: 23.2px; /* 23.2px */
+            font-size: 16px;
+            width: 294px;
+        }
+        
+        @media screen and (min-width:1280px){
+            line-height: 29px; /* 29px */
+            font-size: 20px;
+            width: 380px;
+        }
+     }
+}
