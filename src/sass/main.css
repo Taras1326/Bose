@@ -71,6 +71,10 @@ body {
     padding-bottom: 74px;
   }
 }
+.header .container {
+  display: flex;
+  align-items: center;
+}
 .header__img {
   width: 130px;
   height: 15.236px;
