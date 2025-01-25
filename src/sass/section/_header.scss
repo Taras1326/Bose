@@ -10,14 +10,21 @@
         padding-top: 64px;
         padding-bottom: 74px;
      }
+
+     & .container {
+        display: flex;
+        align-items: center;
+     }
     &__img {
         width: 130px;
         height: 15.236px;
     }
 
+
+
 &__nav {
     display: none;
-
+    
     @media screen and (min-width:768px){
         
      }
@@ -42,7 +49,8 @@
     
 }
 
-    &__link {
+    &__link{
+
         display: none;
         @media screen and (min-width:768px){
         
@@ -54,8 +62,9 @@
             font-weight: 400;
             line-height: normal;
             display: block;
+            // width: 159px;
         }
         
-       
+ 
     }
 }
