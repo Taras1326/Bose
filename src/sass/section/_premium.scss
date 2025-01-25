@@ -1,6 +1,10 @@
 .premium {
     padding-top: 0;
     padding-bottom: 52px;
+    // background-image: url(../../img/vomen-main.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 590px 700px;
     @media screen and (min-width:768px){
         padding-bottom: 128px;
     }
@@ -9,6 +13,9 @@
         padding-bottom: 170px;
     }
 
+    & .container {
+        position: relative;
+    }
 
     &__title {
         color: #E7E7E7;
@@ -20,6 +27,7 @@ letter-spacing: 0.48px;
 text-transform: uppercase;
 width: 206px;
 margin-bottom: 32px;
+text-align: left;
 
 @media screen and (min-width:768px){
     font-size: 30px;
@@ -65,7 +73,13 @@ margin-bottom: 16px;
 @media screen and (min-width:1280px){
     margin-bottom: 20px;
     font-size: 28px;
+    text-align: end;
 }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: flex-end;
     }
 
     &__text {
@@ -82,7 +96,7 @@ line-height: 125%; /* 17.5px */
 
 @media screen and (min-width:1280px){
     line-height: 145%; /* 29px */
-    font-size: 20px;
+    font-size: 20px; 
 }
 
     }

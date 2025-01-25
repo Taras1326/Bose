@@ -138,7 +138,6 @@ body {
 @media screen and (min-width: 1280px) {
   .hero .container {
     display: flex;
-    flex-direction: row;
   }
 }
 .hero__list {
@@ -202,7 +201,6 @@ body {
   font-size: 34px;
   font-style: normal;
   font-weight: 600;
-  line-height: 34px; /* 34px */
   letter-spacing: 0.68px;
   text-transform: uppercase;
   width: 234px;
@@ -215,11 +213,12 @@ body {
     letter-spacing: 0.84px;
     width: 289px;
     margin-bottom: 40px;
+    margin-right: 65px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__title {
-    width: 674px;
+    width: 620px;
     font-size: 74px;
     line-height: 74px;
     letter-spacing: 1.48px;
@@ -236,10 +235,12 @@ body {
   letter-spacing: 0.32px;
   text-transform: uppercase;
   border: none;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .hero__button {
     padding: 19px 114px;
+    width: 294px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -247,12 +248,37 @@ body {
     padding: 22px 167px;
     letter-spacing: 0.4px;
     font-size: 20px;
+    width: 400px;
+  }
+}
+.hero__img {
+  width: 280px;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .hero__img {
+    width: 354px;
+    height: 394px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__img {
+    width: 630px;
+    height: 598px;
+    margin-top: 0;
   }
 }
 
 .premium {
   padding-top: 0;
   padding-bottom: 52px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 590px 700px;
 }
 @media screen and (min-width: 768px) {
   .premium {
@@ -264,6 +290,9 @@ body {
     padding-bottom: 170px;
   }
 }
+.premium .container {
+  position: relative;
+}
 .premium__title {
   color: #E7E7E7;
   font-size: 24px;
@@ -274,6 +303,7 @@ body {
   text-transform: uppercase;
   width: 206px;
   margin-bottom: 32px;
+  text-align: left;
 }
 @media screen and (min-width: 768px) {
   .premium__title {
@@ -319,7 +349,12 @@ body {
   .premium__subtitle {
     margin-bottom: 20px;
     font-size: 28px;
+    text-align: end;
   }
+}
+.premium__box {
+  display: flex;
+  justify-content: flex-end;
 }
 .premium__text {
   width: 280px;
