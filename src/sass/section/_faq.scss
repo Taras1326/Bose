@@ -83,7 +83,6 @@
 //     }
 //   }
   
-<<<<<<< Updated upstream
 //   .faq__text {
 //     font-style: normal;
 //     fill: red;
@@ -105,27 +104,6 @@
 //       line-height: 125%; /* 35px */
 //     }
 //   }
-=======
-  .faq__text-main {
-    color: #E7E7E7;
-    font-size: 14px;
-    line-height: 1.3;
-  
-  
-    // @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-    //   @include font-style(400, 16px, 1.45);
-    // }
-  
-    @media screen and (min-width: 1200px) {
-    //   @include font-style(600, 28px, 1.25);
-      font-family: Gilroy;
-      font-size: 28px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 125%; /* 35px */
-    }
-  }
->>>>>>> Stashed changes
   
 //   .faq__button {
 //     align-items: center;
