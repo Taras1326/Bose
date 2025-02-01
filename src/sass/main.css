@@ -278,17 +278,21 @@ body {
   padding-bottom: 52px;
   background-image: url(../../img/vomen-main.png);
   background-repeat: no-repeat;
-  background-position: top left;
-  background-size: 590px 700px;
+  background-size: 280px 293px;
+  background-position: bottom;
 }
 @media screen and (min-width: 768px) {
   .premium {
     padding-bottom: 128px;
+    background-size: 354px 482px;
+    background-position: top left;
   }
 }
 @media screen and (min-width: 1280px) {
   .premium {
     padding-bottom: 170px;
+    background-size: 590px 700px;
+    background-position: top left;
   }
 }
 .premium .container {
@@ -318,6 +322,7 @@ body {
     letter-spacing: 0.6px;
     line-height: 36px; /* 36px */
     width: 294px;
+    margin-right: 50px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -335,9 +340,15 @@ body {
   flex-direction: column;
   gap: 40px;
 }
+@media screen and (min-width: 768px) {
+  .premium__list {
+    margin-left: 60px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .premium__list {
     gap: 24px;
+    margin-left: 150px;
   }
 }
 .premium__subtitle {
@@ -351,6 +362,7 @@ body {
 @media screen and (min-width: 768px) {
   .premium__subtitle {
     font-size: 28px;
+    text-align: end;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -372,6 +384,8 @@ body {
 @media screen and (min-width: 768px) {
   .premium__subtittle {
     font-size: 28px;
+    text-align: end;
+    margin-right: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -397,12 +411,14 @@ body {
   .premium__text {
     line-height: 145%; /* 23.2px */
     font-size: 16px;
+    margin-right: 60px;
   }
 }
 @media screen and (min-width: 1280px) {
   .premium__text {
     line-height: 145%; /* 29px */
     font-size: 20px;
+    margin-right: 223px;
   }
 }
 
