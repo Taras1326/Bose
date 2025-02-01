@@ -1,19 +1,63 @@
 <section class="hero">
-    <div class="container">
-        <div class="hero__wrapper">
-<ul class="hero__list">
-    <li class="hero__item">
-        <p class="hero__text">Noise cancellation headphones 
-            that are capable for a lot of things</p>
-    </li>
-    <li class="hero__item">
-        <p class="hero__subtext">Up to 20 hours 
-            of playback</p>
-    </li>
-</ul>
-<h1 class="hero__title">Headphones Bose NC 700</h1>
-<button type="button" class="hero__button">order</button>
-</div>
-<img src="./img/eaerphones.png" alt="" class="hero__img">
+  <div class="container">
+    <div class="hero__wrapper">
+      <ul class="hero__list">
+        <li class="hero__item">
+          <p class="hero__text">
+            Noise cancellation headphones that are capable for a lot of things
+          </p>
+        </li>
+        <li class="hero__item">
+          <p class="hero__subtext">Up to 20 hours of playback</p>
+        </li>
+      </ul>
+      <h1 class="hero__title">Headphones Bose NC 700</h1>
+      <button type="button" class="hero__button" data-modal-open>order</button>
     </div>
+    <img src="./img/eaerphones.png" alt="" class="hero__img" />
+  </div>
 </section>
+
+
+<div class="backdrop is-hidden"  data-modal>
+    <div class="backdrop__modal ">
+      <form  action="https://api.web3forms.com/submit" method="POST" class="backdrop__form">
+
+        <input type="hidden" name="access_key" value="ce1201de-7164-4780-86de-73433d9e954b">
+
+        <label for="tell" class="backdrop__label">Your name</label>
+        <div class="backdrop__wrapper">
+        <input type="text" id="tell" class="backdrop__input" required>
+        <svg class="backdrop__icon">
+          <use href="./images/symbol-defs.svg#icon-phone"></use>
+        </svg>
+        </div>
+        <label for="email" class="backdrop__label">Your e-mail</label>
+        <div class="backdrop__wrapper">
+        <input type="email" id="emaill" class="backdrop__input" required>
+        <svg class="backdrop__icon">
+          <use href="./images/symbol-defs.svg#icon-emailblack"></use>
+        </svg>
+        </div>
+        <label for="text" class="backdrop__comment">Send us a message</label>
+        <textarea name="text" id="text" class="backdrop__text"></textarea>
+        <label class="backdrop__wrapperr">
+          <span class="backdrop__icons">
+            <svg class="backdrop__boxx"  xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                <path d="M2 13L9.19156 20.1916C9.61949 20.6195 10.3265 20.5722 10.6936 20.0911L24.5 2" stroke="#DF3D3A" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+        </span>
+          <span class="backdrop__checked">I agree to the</span>
+          <a href="https://www.facebook.com/"  target="_blank" class="backdrop__links">privacy policy</a>
+        </label>
+        <div class="ds">
+        <button type="submit" class="backdrop__button">Send</button>
+        </div>
+      </form>
+      <button type="button" class="backdrop__closee" data-modal-close>
+        <svg class="backdrop__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M18.0915 5.36396C18.482 5.75449 18.482 6.38765 18.0915 6.77818L13.1425 11.7272L18.0915 16.6777C18.482 17.0682 18.482 17.7014 18.0915 18.0919C17.701 18.4824 17.0678 18.4824 16.6773 18.0919L11.7282 13.1414L6.77779 18.0919C6.38727 18.4824 5.7541 18.4824 5.36358 18.0919C4.97306 17.7014 4.97306 17.0682 5.36358 16.6777L10.314 11.7272L5.36358 6.77817C4.97306 6.38764 4.97306 5.75448 5.36358 5.36396C5.75411 4.97343 6.38727 4.97343 6.7778 5.36396L11.7282 10.313L16.6773 5.36396C17.0678 4.97344 17.701 4.97344 18.0915 5.36396Z" fill-opacity="0.8"/>
+          </svg>
+      </button>
+    </div>
+  </div>
