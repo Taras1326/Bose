@@ -78,6 +78,11 @@ body {
 .header__img {
   width: 130px;
   height: 15.236px;
+  transition: transform 2s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.header__img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
 }
 .header__nav {
   display: none;
@@ -99,6 +104,7 @@ body {
   }
 }
 .header__link {
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   display: none;
 }
 @media screen and (min-width: 1280px) {
@@ -109,6 +115,9 @@ body {
     line-height: normal;
     display: block;
   }
+}
+.header__link:hover {
+  color: #b5302d;
 }
 
 .hero {
@@ -236,6 +245,7 @@ body {
   text-transform: uppercase;
   border: none;
   width: 100%;
+  transition: background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1), border 2s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 @media screen and (min-width: 768px) {
   .hero__button {
@@ -250,6 +260,11 @@ body {
     font-size: 20px;
     width: 400px;
   }
+}
+.hero__button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  box-shadow: 11px 10px 65px 8px rgb(240, 0, 0);
 }
 .hero__img {
   width: 280px;
@@ -271,6 +286,236 @@ body {
     height: 598px;
     margin-top: 0;
   }
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(210, 210, 210, 0.514);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop__modal {
+  background-color: #191919;
+  border-radius: 4px;
+  padding: 50px 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%) scale(1);
+  position: relative;
+  padding: 40px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 480px) {
+  .backdrop__modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .backdrop__modal {
+    width: 550px;
+    height: 600px;
+  }
+}
+.backdrop__label {
+  color: #9b9b9b;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+  display: block;
+  margin-bottom: 4px;
+}
+.backdrop__wrapper {
+  position: relative;
+}
+.backdrop__input {
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  resize: none;
+  color: #fff;
+  background: 0 0;
+  border: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  outline: 0;
+  width: 100%;
+  padding: 7px 0;
+  font-size: 16px;
+  transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop__input:hover + .backdrop__icon, .backdrop__input:focus + .backdrop__icon {
+  fill: blue;
+}
+.backdrop__icon {
+  position: absolute;
+  fill: forestgreen;
+  top: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop__comment {
+  color: #9b9b9b;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+  display: block;
+  margin-bottom: 4px;
+}
+.backdrop__text {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  color: #fff;
+  background: 0 0;
+  border: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  outline: 0;
+  width: 100%;
+  padding: 7px 0;
+  font-size: 16px;
+  transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 60px;
+}
+.backdrop__wrapperr {
+  justify-content: center;
+  margin-top: 20px;
+  display: block;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) {
+  .backdrop__wrapperr {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__wrapperr {
+    font-size: 14px;
+  }
+}
+.backdrop__icons {
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  width: 30px;
+  height: 28px;
+  margin-right: 8px;
+  display: block;
+  position: relative;
+}
+.backdrop__icons:focus .backdrop__boxx, .backdrop__icons:hover .backdrop__boxx {
+  opacity: 1;
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.backdrop__boxx {
+  opacity: 0;
+}
+.backdrop__checked {
+  color: #e9edfa;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+@media screen and (min-width: 1280px) {
+  .backdrop__checked {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
+.backdrop__links {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  text-decoration-line: underline;
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__links {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
+.backdrop .ds {
+  display: flex;
+  justify-content: center;
+}
+.backdrop__button {
+  padding: 25px 30px;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 70px;
+  cursor: pointer;
+  color: #B5302D;
+  vertical-align: middle;
+  background-color: transparent;
+  font-weight: 700;
+  border: 2px solid #df3d3a;
+  text-transform: uppercase;
+  transition: color 2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 2s cubic-bezier(0.175, 0.885, 0.32, 1.275), border 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.backdrop__button:hover, .backdrop__button:focus {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #df3d3a;
+  border: 2px solid #C0C0C0;
+}
+.backdrop__closee {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop__closee:hover, .backdrop__closee:focus {
+  border: none;
+}
+.backdrop__closee:hover .backdrop__close, .backdrop__closee:focus .backdrop__close {
+  transform: rotate(180deg);
+  fill: white;
+}
+.backdrop__close {
+  transition: transform 0.4s ease;
+  width: 30px;
+  height: 30px;
+  fill: #df3d3a;
 }
 
 .premium {
