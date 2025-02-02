@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   display: block;
 }
@@ -521,23 +525,23 @@ body {
 .premium {
   padding-top: 0;
   padding-bottom: 52px;
-  background-image: url(../../img/vomen-main.png);
-  background-repeat: no-repeat;
-  background-size: 280px 293px;
-  background-position: bottom;
 }
 @media screen and (min-width: 768px) {
   .premium {
     padding-bottom: 128px;
     background-size: 354px 482px;
+    background-image: url(../img/vomen-main.png);
     background-position: top left;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 1280px) {
   .premium {
     padding-bottom: 170px;
     background-size: 590px 700px;
+    background-image: url(../img/vomen-main.png);
     background-position: top left;
+    background-repeat: no-repeat;
   }
 }
 .premium .container {
@@ -675,6 +679,24 @@ body {
     line-height: 145%; /* 29px */
     font-size: 20px;
     margin-right: 223px;
+  }
+}
+.premium__img {
+  display: block;
+  width: 280px;
+  height: 293px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .premium__img {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .premium__img {
+    display: none;
   }
 }
 
@@ -916,11 +938,19 @@ body {
 @media screen and (min-width: 768px) {
   .bose {
     padding-bottom: 100px;
+    background-image: url(../../img/bose-ar.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 354px 297px;
   }
 }
 @media screen and (min-width: 1280px) {
   .bose {
     padding-bottom: 170px;
+    background-image: url(../../img/bose-ar.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 700px 456px;
   }
 }
 .bose__box {
@@ -999,6 +1029,7 @@ body {
   }
 }
 .bose__img {
+  display: block;
   width: 100%;
   height: 253px;
   flex-shrink: 0;
@@ -1006,21 +1037,64 @@ body {
 }
 @media screen and (min-width: 768px) {
   .bose__img {
-    width: 354px;
-    height: 297px;
-    flex-shrink: 0;
-    margin-left: 60px;
-    margin-top: 0;
+    display: none;
   }
 }
 @media screen and (min-width: 1280px) {
   .bose__img {
-    width: 700px;
-    height: 586px;
-    flex-shrink: 0;
-    margin-left: 170px;
-    margin-top: 0;
+    display: none;
   }
+}
+
+.guarantes__boxx {
+  display: flex;
+  background-image: url(../img/linia1.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.guarantes__img {
+  width: 590px;
+  height: 565px;
+}
+.guarantes__div {
+  margin-left: 150px;
+}
+.guarantes__title {
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.guarantes__svg {
+  fill: red;
+  width: 13px;
+  height: 13px;
+  margin-bottom: 24px;
+}
+.guarantes__title-mini {
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.guarantes__text {
+  width: 400px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 400;
+}
+.guarantes__textt {
+  margin-bottom: 69px;
+  width: 400px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .faq {
