@@ -1,0 +1,64 @@
+.guarantes {
+
+
+    &__boxx {
+        display: flex;
+        background-image: url(../img/linia1.jpg);
+background-repeat: no-repeat;
+background-position: right bottom;
+    }
+
+    &__img {
+width: 590px;
+height: 565px;
+    } 
+
+    &__div {
+        margin-left: 150px;
+
+    }
+
+    &__title {
+color: #E7E7E7;
+font-family: Gilroy;
+font-size: 54px;
+font-weight: 600;
+letter-spacing: 1.08px;
+text-transform: uppercase;
+margin-bottom: 50px;
+    }
+
+    &__svg {
+        fill: red;
+        width: 13px;
+height: 13px;
+margin-bottom: 24px;
+    }
+
+     
+
+    &__title-mini {
+color: #E7E7E7;
+font-family: Gilroy;
+font-size: 28px;
+font-weight: 600;
+margin-bottom: 20px;
+    }
+
+    &__text {
+width: 400px;
+color: rgba(255, 255, 255, 0.80);
+font-family: Gilroy;
+font-size: 20px;
+font-weight: 400;
+    }
+
+    &__textt {
+        margin-bottom: 69px;
+width: 400px;
+color: rgba(255, 255, 255, 0.80);
+font-family: Gilroy;
+font-size: 20px;
+font-weight: 400;
+    }
+}
