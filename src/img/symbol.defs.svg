@@ -1,0 +1,9 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+    <symbol id="hamburger" viewBox="0 0 54 32">
+<path d="M0 0h54.154v32h-54.154v-32z"></path>
+<path d="M-1688.615-120.615h1890.462v19830.154h-1890.462v-19830.154z"></path>
+<path d="M54.154 30.824h-54.154v-4.786h54.154v4.786zM54.154 18.86h-54.154v-4.786h54.154v4.786zM54.154 6.896h-54.154v-4.786h54.154v4.786z"></path>
+</symbol>
+</defs>
+</svg>
