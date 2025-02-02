@@ -1,13 +1,20 @@
 .bose {
     padding-top: 0;
     padding-bottom: 52px;
-
     @media screen and (min-width:768px){
         padding-bottom: 100px;
+        background-image: url(../../img/bose-ar.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 354px 297px;
      }
      
      @media screen and (min-width:1280px){
         padding-bottom: 170px;
+        background-image: url(../../img/bose-ar.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 700px 456px;
      }
 
      &__box {
@@ -83,24 +90,17 @@
      }
 
      &__img {
+      display: block;
       width: 100%;
       height: 253px;
       flex-shrink: 0;
       margin-top: 32px;
       @media screen and (min-width:768px){
-         width: 354px;
-         height: 297px;
-         flex-shrink: 0;
-         margin-left: 60px;
-         margin-top: 0;
+         display: none;
      }
      
      @media screen and (min-width:1280px){
-      width: 700px;
-      height: 586px;
-      flex-shrink: 0;
-      margin-left: 170px;
-      margin-top: 0;
+      display: none;
      }
      }
 }
