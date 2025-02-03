@@ -70,13 +70,13 @@
             line-height: normal;
             display: block;
             // width: 159px;
+            font-family: Gilroy, sans-serif;
         }
     }
 
     &__link:hover {
         color: #b5302d;
     }
-
 
     &__icon {
         display: block;
@@ -92,10 +92,10 @@
 }
 
 
-
 // ============mobile modal================
 
-  .menu {
+.menu {
+    position: relative;
     position: fixed;
     top: 0;
     left: 0;
@@ -118,6 +118,13 @@
     opacity: 0;
     pointer-events: none;
   }
+
+//    .menu__wrap {
+//     display: flex;
+//     align-items: center;
+//     align-items: baseline;
+//    }
+
   .menu__btn {
     border: none;
     background-color: transparent;
@@ -127,9 +134,17 @@
   }
   
   .menu__close {
-    width: 40px;
-    height: 40px;
-    fill: red;
+    width: 200px;
+    height: 30px;
+    fill: #FFFFFFCC;
+    margin-left: 10px;
+    position: absolute;
+    top: 23px;
+    right: 170px;
+    @media screen and (min-width:768px){
+        top: 33px;
+        right: 100px; 
+    }
   
   }
   .menu__btn:hover {
