@@ -36,7 +36,6 @@ button {
   margin-left: auto;
   margin-right: auto;
   max-width: 1280px;
-  outline: 2px solid gray;
 }
 @media screen and (min-width: 360px) {
   .container {
@@ -118,6 +117,7 @@ body {
     font-weight: 400;
     line-height: normal;
     display: block;
+    font-family: Gilroy, sans-serif;
   }
 }
 .header__link:hover {
@@ -139,6 +139,7 @@ body {
 }
 
 .menu {
+  position: relative;
   position: fixed;
   top: 0;
   left: 0;
@@ -175,9 +176,19 @@ body {
 }
 
 .menu__close {
-  width: 40px;
-  height: 40px;
-  fill: red;
+  width: 200px;
+  height: 30px;
+  fill: rgba(255, 255, 255, 0.8);
+  margin-left: 10px;
+  position: absolute;
+  top: 23px;
+  right: 170px;
+}
+@media screen and (min-width: 768px) {
+  .menu__close {
+    top: 33px;
+    right: 100px;
+  }
 }
 
 .menu__btn:hover .menu__close {
@@ -292,6 +303,11 @@ body {
     font-size: 16px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .hero__box {
+    padding-left: 77px;
+  }
+}
 .hero__title {
   color: #E7E7E7;
   font-size: 34px;
@@ -309,7 +325,6 @@ body {
     letter-spacing: 0.84px;
     width: 289px;
     margin-bottom: 40px;
-    margin-right: 65px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -354,7 +369,7 @@ body {
   box-shadow: 11px 10px 65px 8px rgb(240, 0, 0);
 }
 .hero__img {
-  width: 280px;
+  width: 100%;
   height: 240px;
   margin-left: auto;
   margin-right: auto;
@@ -362,14 +377,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero__img {
-    width: 354px;
+    width: 370px;
     height: 394px;
     margin-top: 0;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__img {
-    width: 630px;
+    width: 570px;
     height: 598px;
     margin-top: 0;
   }
@@ -939,7 +954,7 @@ body {
   }
 }
 .luxury__img {
-  width: 360px;
+  width: 280px;
   height: 293px;
 }
 @media screen and (min-width: 768px) {
@@ -991,6 +1006,19 @@ body {
     margin-top: 50px;
   }
 }
+.luxury__subtittle {
+  color: #E7E7E7;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px; /* 25px */
+}
+@media screen and (min-width: 1280px) {
+  .luxury__subtittle {
+    font-size: 28px;
+    line-height: 35px; /* 35px */
+    margin-top: 50px;
+  }
+}
 .luxury__text {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
@@ -1033,7 +1061,7 @@ body {
     background-image: url(../../img/bose-ar.png);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 700px 456px;
+    background-size: 600px 456px;
   }
 }
 .bose__box {

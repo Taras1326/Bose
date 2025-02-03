@@ -61,7 +61,7 @@
 }
 
     &__img {
-        width: 360px;
+        width: 280px;
         height: 293px;
         @media screen and (min-width:768px){
             width: 768px;
@@ -101,6 +101,22 @@ font-size: 20px;
 font-weight: 600;
 line-height: 25px; /* 25px */
 margin-top: 32px;
+@media screen and (min-width:768px){
+    
+}
+
+@media screen and (min-width:1280px){
+    font-size: 28px;
+    line-height: 35px; /* 35px */
+    margin-top: 50px;
+}
+    }
+
+    &__subtittle {
+        color: #E7E7E7;
+font-size: 20px;
+font-weight: 600;
+line-height: 25px; /* 25px */
 
 @media screen and (min-width:768px){
     
