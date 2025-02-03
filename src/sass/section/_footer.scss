@@ -1,0 +1,104 @@
+.footer {
+    padding-top: 72px;
+    padding-bottom: 52px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Gilroy', sans-serif;
+    color: rgba(255, 255, 255, 0.3);
+
+
+      @media screen and (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 50px;
+      }
+      
+      @media screen and (min-width: 1280px) {
+        padding-top: 170px;
+        padding-bottom: 72px;
+      }
+  }
+  
+  .footer--container {
+      //  margin-left:0;
+      // margin-right: 0;
+      // width: 100%;
+  
+      text-align: left;    
+      @media screen and (min-width: 768px) {        
+          padding-left: 60px;
+          padding-right: 60px;
+  
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; 
+      align-items: flex-end;       
+      }
+      @media screen and (min-width: 1280px) {        
+          padding-left: 190px;
+          padding-right: 80px;
+          }
+  }
+  
+  .footer-mobile {
+      display: flex;
+      justify-content: space-between;    
+      margin-bottom: 52px;
+      @media screen and (min-width: 768px) {
+          margin-bottom: 0px;
+        }
+      @media screen and (min-width: 1280px) {
+          justify-content: start;
+        }
+  }
+  .footer-first{
+      text-align: left;
+          @media screen and (min-width: 768px) {   
+      margin-bottom: 0px;
+      margin-right: 139px;
+        } 
+        @media screen and (min-width: 1280px) {
+      display: flex;   
+      margin-right: 50px;
+  
+        }
+  
+  }
+  .footer-second{
+      text-align: right;
+            @media screen and (min-width: 768px) {
+      text-align: left;
+        }
+              @media screen and (min-width: 1280px) {
+              display: flex;   
+        }
+  }
+  .footer__select {
+     @media screen and (min-width: 1280px) {
+      display: flex;
+      margin-bottom: 0px;
+      margin-right: 0px;
+        }   
+        
+  }
+   .footer-select__item:not(:last-child) {
+    margin-bottom: 24px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0px;
+      margin-right: 50px;
+        }
+      }
+      
+     .footer-select__item {     
+    &:hover,
+    &:focus {
+      color: #df3d3a;
+      text-decoration: none;
+      outline: transparent;
+    }
+  }
+  
+  .primary-footer {
+    font-family: 'Roboto';
+    color: rgba(255, 255, 255, 0.8);
+  }
