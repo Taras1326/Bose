@@ -1023,6 +1023,89 @@ body {
   }
 }
 
+.guarantes__boxx {
+  display: flex;
+  background-image: url(../img/linia1.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.guarantes__img {
+  width: 590px;
+  height: 565px;
+}
+@media screen and (max-width: 1279px) {
+  .guarantes__img {
+    width: 354px;
+    height: 442px;
+  }
+}
+.guarantes__div {
+  margin-left: 150px;
+}
+@media screen and (max-width: 1079px) {
+  .guarantes__div {
+    margin-left: 60px;
+  }
+}
+.guarantes__title {
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1079px) {
+  .guarantes__title {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+}
+.guarantes__svg {
+  fill: red;
+  width: 13px;
+  height: 13px;
+  margin-bottom: 24px;
+}
+.guarantes__title-mini {
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1079px) {
+  .guarantes__title-mini {
+    font-size: 20px;
+  }
+}
+.guarantes__text {
+  width: 400px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1079px) {
+  .guarantes__text {
+    font-size: 16px;
+  }
+}
+.guarantes__textt {
+  margin-bottom: 69px;
+  width: 400px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1079px) {
+  .guarantes__textt {
+    font-size: 16px;
+  }
+}
+
 .faq {
   padding-top: 16px;
   padding-bottom: 52px;

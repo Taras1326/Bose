@@ -11,10 +11,20 @@ background-position: right bottom;
     &__img {
 width: 590px;
 height: 565px;
+
+@media screen and (max-width:1279px){ 
+    width: 354px;
+height: 442px;
+}
     } 
 
     &__div {
         margin-left: 150px;
+
+        @media screen and(max-width:1279px){ 
+            margin-left: 60px;
+
+        }
 
     }
 
@@ -26,6 +36,11 @@ font-weight: 600;
 letter-spacing: 1.08px;
 text-transform: uppercase;
 margin-bottom: 50px;
+
+@media screen and  (max-width:1279px){ 
+    font-size: 30px;
+    letter-spacing: 0.6px;
+}
     }
 
     &__svg {
@@ -43,7 +58,11 @@ font-family: Gilroy;
 font-size: 28px;
 font-weight: 600;
 margin-bottom: 20px;
+
+@media screen and  (max-width:1279px){ 
+font-size: 20px;
     }
+}
 
     &__text {
 width: 400px;
@@ -51,6 +70,11 @@ color: rgba(255, 255, 255, 0.80);
 font-family: Gilroy;
 font-size: 20px;
 font-weight: 400;
+
+@media screen and (max-width:1279px){ 
+    font-size: 16px;
+    width: 294px;
+}
     }
 
     &__textt {
@@ -60,5 +84,10 @@ color: rgba(255, 255, 255, 0.80);
 font-family: Gilroy;
 font-size: 20px;
 font-weight: 400;
+
+@media screen and (max-width:1279px){ 
+    font-size: 16px;
+    width: 294px;
+ }
        }
 }
