@@ -19,10 +19,11 @@ height: 442px;
     } 
 
     &__div {
-        margin-left: 150px;
 
-        @media screen and(max-width:1279px){ 
-            margin-left: 60px;
+           margin-left: 60px;
+
+        @media screen and(min-width:768px){ 
+                 margin-left: 150px;
 
         }
 
