@@ -1158,26 +1158,65 @@ body {
 }
 
 .guarantes__boxx {
-  display: flex;
   background-image: url(../img/linia1.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
+@media screen and (min-width: 768px) {
+  .guarantes__boxx {
+    display: flex;
+  }
+}
 .guarantes__img {
   width: 590px;
   height: 565px;
+  display: none;
+}
+@media screen and (max-width: 1279px) {
+  .guarantes__img {
+    width: 354px;
+    height: 442px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .guarantes__img {
+    display: block;
+  }
 }
 .guarantes__div {
   margin-left: 150px;
 }
+@media screen and (max-width: 1279px) {
+  .guarantes__div {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .guarantes__div {
+    margin-left: 0px;
+  }
+}
 .guarantes__title {
   color: #E7E7E7;
   font-family: Gilroy;
-  font-size: 54px;
+  font-size: 24px;
   font-weight: 600;
-  letter-spacing: 1.08px;
+  letter-spacing: 0.48px;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .guarantes__title {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .guarantes__title {
+    font-size: 54px;
+    letter-spacing: 1.08px;
+  }
 }
 .guarantes__svg {
   fill: red;
@@ -1192,12 +1231,35 @@ body {
   font-weight: 600;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1279px) {
+  .guarantes__title-mini {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .guarantes__title-mini {
+    width: 150px;
+    margin-bottom: 16px;
+  }
+}
 .guarantes__text {
   width: 400px;
   color: rgba(255, 255, 255, 0.8);
   font-family: Gilroy;
   font-size: 20px;
   font-weight: 400;
+}
+@media screen and (max-width: 1279px) {
+  .guarantes__text {
+    font-size: 16px;
+    width: 294px;
+  }
+}
+@media screen and (max-width: 1279px) and (max-width: 767px) {
+  .guarantes__text {
+    width: 294px;
+    margin-bottom: 32px;
+  }
 }
 .guarantes__textt {
   margin-bottom: 69px;
@@ -1206,6 +1268,27 @@ body {
   font-family: Gilroy;
   font-size: 20px;
   font-weight: 400;
+}
+@media screen and (max-width: 1279px) {
+  .guarantes__textt {
+    font-size: 16px;
+    width: 280px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .guarantes__textt {
+    margin-bottom: 24px;
+  }
+}
+.guarantes__img-telephone {
+  width: 280px;
+  height: 268px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .guarantes__img-telephone {
+    display: none;
+  }
 }
 
 .faq {

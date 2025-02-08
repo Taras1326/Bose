@@ -2,30 +2,65 @@
 
 
     &__boxx {
-        display: flex;
+        
         background-image: url(../img/linia1.jpg);
 background-repeat: no-repeat;
 background-position: right bottom;
+
+@media screen and (min-width:768px){ 
+      display: flex;
+        }
     }
 
     &__img {
 width: 590px;
 height: 565px;
+display: none;
+
+@media screen and (max-width:1279px){ 
+    width: 354px;
+height: 442px;
+}
+
+@media screen and (min-width:768px){ 
+ display: block;
+}
+
     } 
 
     &__div {
-        margin-left: 150px;
+         margin-left: 150px;
+          
+
+        @media screen and (max-width:1279px){ 
+      margin-left: 60px;
+        }
+
+        @media screen and (max-width:767px){ 
+      margin-left: 0px;
+        }
 
     }
 
     &__title {
 color: #E7E7E7;
 font-family: Gilroy;
-font-size: 54px;
+font-size: 24px;
 font-weight: 600;
-letter-spacing: 1.08px;
+letter-spacing: 0.48px;
 text-transform: uppercase;
-margin-bottom: 50px;
+margin-bottom: 32px;
+
+@media screen and  (min-width:768px){ 
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    margin-bottom: 50px;
+}
+
+@media screen and  (min-width:1280px){ 
+    font-size: 54px;
+    letter-spacing: 1.08px;
+}
     }
 
     &__svg {
@@ -43,7 +78,16 @@ font-family: Gilroy;
 font-size: 28px;
 font-weight: 600;
 margin-bottom: 20px;
+
+@media screen and  (max-width:1279px){ 
+font-size: 20px;
     }
+
+    @media screen and  (max-width:767px){ 
+        width: 150px;
+margin-bottom: 16px;
+    }
+}
 
     &__text {
 width: 400px;
@@ -51,6 +95,16 @@ color: rgba(255, 255, 255, 0.80);
 font-family: Gilroy;
 font-size: 20px;
 font-weight: 400;
+
+@media screen and (max-width:1279px){ 
+    font-size: 16px;
+    width: 294px;
+
+    @media screen and (max-width:767px){ 
+    width: 294px;
+    margin-bottom: 32px;
+}
+}
     }
 
     &__textt {
@@ -60,5 +114,24 @@ color: rgba(255, 255, 255, 0.80);
 font-family: Gilroy;
 font-size: 20px;
 font-weight: 400;
+
+@media screen and (max-width:1279px){ 
+    font-size: 16px;
+    width: 280px;
+ }
+
+     @media screen and (max-width:767px){ 
+    margin-bottom: 24px;
+}
+       }
+
+       &__img-telephone {
+        width: 280px;
+height: 268px;
+display: block;
+
+@media screen and (min-width:768px){ 
+    display: none;
+ }
        }
 }
