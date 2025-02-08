@@ -1336,19 +1336,16 @@ body {
     letter-spacing: 1.08px;
   }
 }
-
 .faq__list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style-type: none;
 }
-
 .faq__item {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   position: relative;
 }
-
 .faq__body {
   padding-top: 24px;
   padding-bottom: 14px;
@@ -1358,17 +1355,14 @@ body {
     padding-bottom: 27px;
   }
 }
-
 .faq__body-padding {
   padding-top: 0;
 }
-
 .faq__body-item {
   display: flex;
   justify-content: baseline;
   align-items: center;
   position: relative;
-  border-bottom: 2px solid rgba(126, 124, 124, 0.789);
   padding-bottom: 32px;
 }
 @media screen and (max-width: 767px) {
@@ -1381,39 +1375,27 @@ body {
     justify-content: flex-start;
   }
 }
-
 .faq__body-item::before {
   display: block;
   align-items: center;
   margin-right: 16px;
   color: #e7e7e7;
-  counter-increment: section;
-  content: "0" counter(section);
+  content: "01";
   font-style: 400, 20px, 0.7;
   font-family: "Roboto Condensed";
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%; /* 35px */
-  font-family: "RobotoCondensed";
-}
-.faq__body-item::before:nth-child(2) {
-  color: #e7e7e7;
-  counter-increment: section;
-  content: "0" counter(section);
-}
-.faq__body-item::before:nth-child(3) {
-  animation-delay: 0.8s;
-}
-.faq__body-item::before:nth-child(4) {
-  animation-delay: 1.2s;
 }
 @media screen and (min-width: 768px) {
   .faq__body-item::before {
     margin-right: 32px;
   }
 }
-
+.faq__body-item:nth-child(2)::before {
+  content: "02";
+}
 .faq__text {
   font-size: 14px;
   font-style: normal;
@@ -1437,7 +1419,6 @@ body {
     line-height: 125%; /* 35px */
   }
 }
-
 .faq__button {
   position: absolute;
   right: 0;
@@ -1474,8 +1455,8 @@ body {
     height: 42px;
   }
 }
-
 .faq__content {
+  list-style: none;
   margin-top: 10px;
   padding-left: 36px;
   padding-right: 44px;
@@ -1489,9 +1470,9 @@ body {
     padding-left: 60px;
   }
 }
-
 .faq__item.hide .faq__content {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */
