@@ -1157,10 +1157,12 @@ body {
   }
 }
 
-.guarantes__boxx {
-  background-image: url(../img/linia1.jpg);
-  background-repeat: no-repeat;
-  background-position: right bottom;
+@media screen and (min-width: 1280px) {
+  .guarantes {
+    background-image: url(../img/linia.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
 }
 @media screen and (min-width: 768px) {
   .guarantes__boxx {
@@ -1289,6 +1291,114 @@ body {
   .guarantes__img-telephone {
     display: none;
   }
+}
+
+.brand {
+  padding-top: 52px;
+}
+@media screen and (min-width: 768px) {
+  .brand__img-div {
+    display: flex;
+    gap: 60px;
+  }
+}
+.brand__title {
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  width: 70px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .brand__title {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+}
+.brand__text {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 32px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .brand__text {
+    display: none;
+  }
+}
+.brand__text-tablet {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 32px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .brand__text-tablet {
+    font-size: 16px;
+    width: 294px;
+    display: block;
+  }
+}
+.brand__img {
+  width: 280px;
+  height: 251px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .brand__img {
+    width: 354px;
+    height: 524px;
+  }
+}
+.brand__frustration {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 32px;
+}
+.brand__newer-img {
+  width: 280px;
+  height: 343px;
+  margin-bottom: 32px;
+}
+.brand__svg {
+  fill: #DF3D3A;
+  width: 34px;
+  height: 25px;
+  margin-bottom: 24px;
+}
+.brand__title-mini {
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+.brand__text-mini {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
 }
 
 .faq {

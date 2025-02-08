@@ -1,0 +1,127 @@
+.brand {
+
+
+&__img-div {
+    @media screen and (min-width:768px){ 
+  display: flex;
+  gap: 60px;
+
+        }
+}
+
+padding-top: 52px;
+
+    &__title {
+color: #E7E7E7;
+font-family: Gilroy;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; 
+letter-spacing: 0.48px;
+text-transform: uppercase;
+width: 70px;
+margin-bottom: 32px;
+
+@media screen and (min-width:768px){ 
+font-size: 30px;
+letter-spacing: 0.6px;
+
+        }
+
+
+
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.80);
+font-family: Gilroy;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; 
+margin-bottom: 32px;
+display: block;
+
+@media screen and (min-width:768px){ 
+display: none;
+
+        }
+    }
+
+    &__text-tablet {
+                color: rgba(255, 255, 255, 0.80);
+font-family: Gilroy;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; 
+margin-bottom: 32px;
+display: none;
+
+@media screen and (min-width:768px){ 
+font-size: 16px;
+width: 294px;
+display: block;
+        }
+    }
+    
+
+    &__img {
+        width: 280px;
+        height: 251px;
+        margin-bottom: 32px;
+
+   
+@media screen and (min-width:768px){ 
+     width: 354px;
+height: 524px;
+
+        }
+    } 
+
+    &__frustration {
+        color: rgba(255, 255, 255, 0.80);
+font-family: Gilroy;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; 
+margin-bottom: 32px;
+    }
+
+    &__newer-img {
+        width: 280px;
+height: 343px;
+margin-bottom: 32px;
+    }
+
+    &__svg {
+        fill: #DF3D3A;
+        width: 34px;
+height: 25px;
+margin-bottom: 24px;
+
+    }
+
+
+    &__title-mini {
+color: #E7E7E7;
+
+font-family: Gilroy;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%;
+margin-bottom: 16px;
+    }
+
+    &__text-mini {
+color: rgba(255, 255, 255, 0.40);
+font-family: Gilroy;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; 
+    }
+}
