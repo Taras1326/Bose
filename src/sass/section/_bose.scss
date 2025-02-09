@@ -1,5 +1,5 @@
 .bose {
-    padding-top: 0;
+    padding-top: 406px;
     padding-bottom: 52px;
     @media screen and (min-width:768px){
         padding-bottom: 100px;
@@ -7,14 +7,17 @@
         background-repeat: no-repeat;
         background-position: top right;
         background-size: 354px 297px;
+        padding-top: 311px;
+        background-position: bottom right;
      }
      
      @media screen and (min-width:1280px){
         padding-bottom: 170px;
         background-image: url(../../img/bose-ar.png);
         background-repeat: no-repeat;
-        background-position: top right;
+        background-position: 80% 400px;
         background-size: 600px 456px;
+        padding-top: 389px;
      }
 
      &__box {
