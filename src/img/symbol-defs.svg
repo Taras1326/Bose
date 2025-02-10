@@ -3,5 +3,18 @@
 <symbol id="icon-krug" viewBox="0 0 32 32">
 <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
+<symbol id="close" viewBox="0 0 32 32">
+<path d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
+</symbol>
+<symbol id="right-top" viewBox="0 0 31 32">
+<path fill="none" stroke="#df3d3a" style="stroke: var(--color1, #df3d3a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.7826" d="M1.391 29.783l27.826-27.826M29.217 1.957h-27.826M29.217 1.957v27.826"></path>
+</symbol>
+<symbol id="check" viewBox="0 0 38 32">
+<path fill="none" stroke="#df3d3a" style="stroke: var(--color1, #df3d3a)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M2.909 18.909l10.46 10.46c0.622 0.622 1.651 0.554 2.185-0.146l20.082-26.314"></path>
+</symbol>
+<symbol id="icon-check" viewBox="0 0 31 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M1 4.918h28v25.918h-28v-25.918z"></path>
+<path fill="none" stroke="#df3d3a" style="stroke: var(--color2, #df3d3a)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M7 13l7.192 7.192c0.428 0.428 1.135 0.381 1.502-0.101l13.806-18.091"></path>
+</symbol>
 </defs>
 </svg>
