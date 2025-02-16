@@ -3,7 +3,7 @@
     padding-bottom: 52px;
     @media screen and (min-width:768px){
         padding-bottom: 128px;
-        background-size: 354px 482px;
+        background-size: 364px 482px;
         background-image: url(../img/vomen-main.png);
         background-position: 30% -50px;
         background-position: top left;
@@ -62,24 +62,25 @@ font-weight: 600;
 line-height: 28.8px; /* 28.8px */
 letter-spacing: 0.48px;
 text-transform: uppercase;
-width: 206px;
+width: 221px;
 margin-bottom: 32px;
+font-family: Gilroy, sans-serif;
 
 @media screen and (min-width:768px){
     font-size: 30px;
     letter-spacing: 0.6px;
     line-height: 36px; /* 36px */
     width: 294px;
-    padding-right: 50px;
+    padding-right: 70px;
 }
 
 @media screen and (min-width:1280px){
     font-size: 54px;
     line-height: 64.8px; /* 64.8px */
     letter-spacing: 1.08px;
-    width: 464px;
+    width: 493px;
     margin-bottom: 50px;
-    padding-right: 110px;
+    padding-right: 90px;
 }
 
     }
@@ -107,6 +108,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 25px; /* 25px */
 margin-bottom: 16px;
+font-family: Gilroy, sans-serif;
 @media screen and (min-width:768px){
     font-size: 28px;  
     text-align: end;
@@ -117,7 +119,7 @@ margin-bottom: 16px;
     margin-bottom: 20px;
     font-size: 28px;
     text-align: end;
-    padding-right: 225px;
+    padding-right: 210px;
 }
     }
 
@@ -129,17 +131,18 @@ font-style: normal;
 font-weight: 600;
 line-height: 25px; /* 25px */
 margin-bottom: 16px;
+font-family: Gilroy, sans-serif;
 @media screen and (min-width:768px){
     font-size: 28px;
     text-align: end;
-    padding-right: 40px;
+    padding-right: 44px;
 }
 
 @media screen and (min-width:1280px){
     margin-bottom: 20px;
     font-size: 28px;
     text-align: end;
-    padding-right: 270px;
+    padding-right: 252px;
 }
     }
 
@@ -166,13 +169,14 @@ line-height: 125%; /* 17.5px */
 @media screen and (min-width:768px){
     line-height: 145%; /* 23.2px */
     font-size: 16px;
-    padding-right: 60px;
+    padding-right: 80px;
 }
 
 @media screen and (min-width:1280px){
     line-height: 145%; /* 29px */
     font-size: 20px; 
     width: 510px;
+    padding-right: 60px;
     
 }
 

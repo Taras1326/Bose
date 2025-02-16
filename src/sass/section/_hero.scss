@@ -97,7 +97,7 @@ letter-spacing: 0.68px;
 text-transform: uppercase;
 width: 234px;
 margin-bottom: 32px;
-
+font-family: Gilroy, sans-serif;
 @media screen and (min-width:768px){
   font-size: 42px;
   line-height: 48px;
@@ -118,6 +118,8 @@ margin-bottom: 40px;
 &__button {
   padding: 19px 113px;
   background: #DF3D3A;
+  background-image: linear-gradient(90deg, transparent 50%, #b5302d 50%);
+    background-size: 200% 100%;
   color: rgba(255, 255, 255, 0.90);
 font-size: 16px;
 font-weight: 600;
@@ -126,7 +128,7 @@ letter-spacing: 0.32px;
 text-transform: uppercase;
 border: none;
 width: 100%;
-transition: background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1), border 2s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+transition: background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1), background-position 2s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   @media screen and (min-width:768px){
       padding: 19px 114px;
       width: 294px;
@@ -141,9 +143,11 @@ transition: background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1), border 2s c
 }
 
 &__button:hover {
-  background-color: transparent;
-  border: 1px solid white;
-  box-shadow: 11px 10px 65px 8px rgba(240,0,0,1);
+  // background-color: transparent;
+  // border: 1px solid white;
+  // box-shadow: 11px 10px 65px 8px rgba(240,0,0,1);
+  background-color: #b5302d;
+  background-position: -100% 100%;
 }
 
 &__img {
