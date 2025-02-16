@@ -1586,4 +1586,235 @@ body {
   max-height: 0;
   overflow: hidden;
   list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+  .order {
+    padding-bottom: 90px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .order {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .order {
+    padding-bottom: 170px;
+  }
+}
+.order__container {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .order__container {
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .order__container {
+    padding: 0 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .order__container {
+    padding: 0 0 0 190;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .order__content-wrap {
+    width: 400px;
+  }
+}
+.order__title {
+  color: #e7e7e7;
+  font-family: Gilroy;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 64.8px */
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .order__title {
+    text-align: center;
+  }
+}
+.order__list {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .order__list {
+    margin-bottom: 50px;
+  }
+}
+.order__list__item {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.order__list__item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.order__list__button {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  padding: 25px 0;
+  background-color: #191919;
+  width: 100%;
+  cursor: pointer;
+}
+.order__button-text {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.2;
+}
+.order__price {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #df3d3a;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .order__price {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .order__price {
+    font-size: 54px;
+    margin-bottom: 32px;
+  }
+}
+.order__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 22px 0;
+  width: 100%;
+  border: none;
+  background-color: #df3d3a;
+  color: rgba(255, 255, 255, 0.9);
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, #b5302d 50%);
+  transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, color 0.5s ease 0s, background-color 0.5s ease;
+}
+.order__button:hover, .order__button:focus {
+  background-color: #b5302d;
+  background-position: -100% 100%;
+}
+@media screen and (min-width: 768px) {
+  .order__button {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .order__button {
+    width: 100%;
+  }
+}
+.order__button__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .order__button__text {
+    font-size: 20px;
+  }
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.radio__label {
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .radio__label {
+    margin-top: 330px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .radio__label {
+    margin-top: 510px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .radio__label {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.dark {
+  background-color: #000;
+  margin-right: 20px;
+}
+
+.light {
+  background-color: #fff;
+}
+
+.radio__img {
+  position: absolute;
+  opacity: 0;
+  height: auto;
+  pointer-events: none;
+}
+@media screen and (max-width: 1439px) {
+  .radio__img {
+    top: 60px;
+    left: 50%;
+    width: 648px;
+    height: 446px;
+    flex-shrink: 0;
+    margin-top: 32px;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .radio__img {
+    margin-top: 32px;
+    right: 0;
+    top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .radio__img {
+    width: 280px;
+    height: 265px;
+    flex-shrink: 0;
+  }
+}
+
+.radio__input:checked + .radio__label {
+  border: 5px solid #df3d3a;
+}
+
+.radio__input:checked + .radio__label .radio__img {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
