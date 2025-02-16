@@ -1294,12 +1294,13 @@ body {
 }
 
 .brand {
-  padding-top: 52px;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .brand__img-div {
     display: flex;
     gap: 60px;
+    margin-bottom: 90px;
   }
 }
 .brand__title {
@@ -1327,12 +1328,21 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  margin-bottom: 32px;
+  margin-bottom: 85px;
   display: none;
 }
 @media screen and (min-width: 768px) {
   .brand__text {
     display: block;
+    width: 294px;
+  }
+}
+.brand__text:last-child {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .brand__text:last-child {
+    display: none;
   }
 }
 .brand__text-tablet {
@@ -1344,13 +1354,13 @@ body {
   line-height: 125%;
   margin-bottom: 32px;
   width: 294px;
-  display: block;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .brand__text-tablet {
     font-size: 16px;
     width: 294px;
-    display: none;
+    display: block;
   }
 }
 .brand__img {
@@ -1364,14 +1374,38 @@ body {
     height: 524px;
   }
 }
-.brand__frustration {
+.brand__text-tel {
+  display: block;
   color: rgba(255, 255, 255, 0.8);
   font-family: Gilroy;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
+  width: 280px;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .brand__text-tel {
+    display: none;
+  }
+}
+.brand__frustration {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 32px;
+  width: 294px;
+}
+@media screen and (min-width: 768px) {
+  .brand__frustration {
+    position: absolute;
+    top: 585px;
+    right: 190px;
+  }
 }
 .brand__newer-img {
   width: 280px;

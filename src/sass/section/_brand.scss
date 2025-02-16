@@ -1,15 +1,16 @@
 .brand {
-
+position: relative;
 
 &__img-div {
     @media screen and (min-width:768px){ 
   display: flex;
   gap: 60px;
+  margin-bottom: 90px;
 
         }
 }
 
-padding-top: 52px;
+
 
     &__title {
 color: #E7E7E7;
@@ -40,16 +41,23 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 125%; 
-margin-bottom: 32px;
+margin-bottom: 85px;
 
 display: none;
 
 
 @media screen and (min-width:768px){ 
 display: block;
+width: 294px;
         }
     }
 
+    &__text:last-child {
+        display: block;
+@media screen and (min-width:768px){ 
+display: none;
+}
+    }
     &__text-tablet {
                 color: rgba(255, 255, 255, 0.80);
 font-family: Gilroy;
@@ -59,12 +67,13 @@ font-weight: 400;
 line-height: 125%; 
 margin-bottom: 32px;
 width: 294px;
-display: block;
 
+
+display: none;
 @media screen and (min-width:768px){ 
 font-size: 16px;
 width: 294px;
-display: none;
+display: block;
         }
     }
     
@@ -73,6 +82,7 @@ display: none;
         width: 280px;
         height: 251px;
         margin-bottom: 32px;
+        
 
    
 @media screen and (min-width:768px){ 
@@ -82,14 +92,37 @@ height: 524px;
         }
     } 
 
-    &__frustration {
-        color: rgba(255, 255, 255, 0.80);
+    &__text-tel {
+display: block;
+color: rgba(255, 255, 255, 0.80);
 font-family: Gilroy;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
+line-height: 125%;
+width: 280px;
+margin-bottom: 32px;
+        @media screen and (min-width:768px){ 
+display: none;
+        }
+    }
+
+    &__frustration {
+        color: rgba(255, 255, 255, 0.80);
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
 line-height: 125%; 
 margin-bottom: 32px;
+width: 294px;
+
+
+@media screen and (min-width:768px){ 
+position: absolute;
+top: 585px;
+right: 190px;
+        }
     }
 
     &__newer-img {
