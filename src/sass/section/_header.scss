@@ -60,7 +60,7 @@
         transition: color .25s cubic-bezier(.4,0,.2,1);
         display: none;
         @media screen and (min-width:768px){
-        
+          font-family: Gilroy, sans-serif;
         }
         
         @media screen and (min-width:1280px){
@@ -126,11 +126,15 @@
 //    }
 
   .menu__btn {
+    width: 200px;
     border: none;
     background-color: transparent;
     position: absolute;
-    top: 10px;
+    top: 43px;
     right: 15px;
+    @media screen and (min-width:768px){
+      width: 700px;
+  }
   }
   
   .menu__close {

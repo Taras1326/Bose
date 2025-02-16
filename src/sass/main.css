@@ -111,6 +111,11 @@ body {
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .header__link {
+    font-family: Gilroy, sans-serif;
+  }
+}
 @media screen and (min-width: 1280px) {
   .header__link {
     color: rgba(255, 255, 255, 0.8);
@@ -169,11 +174,17 @@ body {
 }
 
 .menu__btn {
+  width: 200px;
   border: none;
   background-color: transparent;
   position: absolute;
-  top: 10px;
+  top: 43px;
   right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .menu__btn {
+    width: 700px;
+  }
 }
 
 .menu__close {
@@ -320,6 +331,7 @@ body {
   text-transform: uppercase;
   width: 234px;
   margin-bottom: 32px;
+  font-family: Gilroy, sans-serif;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -342,6 +354,8 @@ body {
 .hero__button {
   padding: 19px 113px;
   background: #DF3D3A;
+  background-image: linear-gradient(90deg, transparent 50%, #b5302d 50%);
+  background-size: 200% 100%;
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   font-weight: 600;
@@ -350,7 +364,7 @@ body {
   text-transform: uppercase;
   border: none;
   width: 100%;
-  transition: background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1), border 2s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1), background-position 2s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 @media screen and (min-width: 768px) {
   .hero__button {
@@ -367,9 +381,8 @@ body {
   }
 }
 .hero__button:hover {
-  background-color: transparent;
-  border: 1px solid white;
-  box-shadow: 11px 10px 65px 8px rgb(240, 0, 0);
+  background-color: #b5302d;
+  background-position: -100% 100%;
 }
 .hero__img {
   width: 100%;
@@ -646,7 +659,7 @@ body {
 @media screen and (min-width: 768px) {
   .premium {
     padding-bottom: 128px;
-    background-size: 354px 482px;
+    background-size: 364px 482px;
     background-image: url(../img/vomen-main.png);
     background-position: 30% -50px;
     background-position: top left;
@@ -690,8 +703,9 @@ body {
   line-height: 28.8px; /* 28.8px */
   letter-spacing: 0.48px;
   text-transform: uppercase;
-  width: 206px;
+  width: 221px;
   margin-bottom: 32px;
+  font-family: Gilroy, sans-serif;
 }
 @media screen and (min-width: 768px) {
   .premium__title {
@@ -699,7 +713,7 @@ body {
     letter-spacing: 0.6px;
     line-height: 36px; /* 36px */
     width: 294px;
-    padding-right: 50px;
+    padding-right: 70px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -707,9 +721,9 @@ body {
     font-size: 54px;
     line-height: 64.8px; /* 64.8px */
     letter-spacing: 1.08px;
-    width: 464px;
+    width: 493px;
     margin-bottom: 50px;
-    padding-right: 110px;
+    padding-right: 90px;
   }
 }
 .premium__list {
@@ -736,6 +750,7 @@ body {
   font-weight: 600;
   line-height: 25px; /* 25px */
   margin-bottom: 16px;
+  font-family: Gilroy, sans-serif;
 }
 @media screen and (min-width: 768px) {
   .premium__subtitle {
@@ -749,7 +764,7 @@ body {
     margin-bottom: 20px;
     font-size: 28px;
     text-align: end;
-    padding-right: 225px;
+    padding-right: 210px;
   }
 }
 .premium__subtittle {
@@ -759,12 +774,13 @@ body {
   font-weight: 600;
   line-height: 25px; /* 25px */
   margin-bottom: 16px;
+  font-family: Gilroy, sans-serif;
 }
 @media screen and (min-width: 768px) {
   .premium__subtittle {
     font-size: 28px;
     text-align: end;
-    padding-right: 40px;
+    padding-right: 44px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -772,7 +788,7 @@ body {
     margin-bottom: 20px;
     font-size: 28px;
     text-align: end;
-    padding-right: 270px;
+    padding-right: 252px;
   }
 }
 .premium__box {
@@ -800,7 +816,7 @@ body {
   .premium__text {
     line-height: 145%; /* 23.2px */
     font-size: 16px;
-    padding-right: 60px;
+    padding-right: 80px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -808,6 +824,7 @@ body {
     line-height: 145%; /* 29px */
     font-size: 20px;
     width: 510px;
+    padding-right: 60px;
   }
 }
 .premium__img {
@@ -919,7 +936,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .capable__wrapper:nth-child(1) {
-    margin-right: 210px;
+    margin-right: 240px;
   }
 }
 .capable__box {
@@ -949,7 +966,7 @@ body {
 .luxury {
   padding-top: 0;
   padding-bottom: 70px;
-  background-image: url(../../img/luxury-img.png);
+  background-image: url(../img/luxury-img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 524px;
@@ -964,6 +981,7 @@ body {
     padding-bottom: 170px;
     text-align: end;
     padding-top: 20px;
+    background-size: 100% 700px;
   }
 }
 .luxury .container {
@@ -1044,7 +1062,7 @@ body {
     -moz-column-gap: 60px;
          column-gap: 60px;
     row-gap: 0;
-    transform: translateY(180%);
+    transform: translate(10%, 180%);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1111,10 +1129,9 @@ body {
 @media screen and (min-width: 768px) {
   .bose {
     padding-bottom: 100px;
-    background-image: url(../../img/bose-ar.png);
+    background-image: url(../img/bose-ar.png);
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 354px 297px;
+    background-size: 354px 347px;
     padding-top: 311px;
     background-position: bottom right;
   }
@@ -1122,7 +1139,7 @@ body {
 @media screen and (min-width: 1280px) {
   .bose {
     padding-bottom: 170px;
-    background-image: url(../../img/bose-ar.png);
+    background-image: url(../img/bose-ar.png);
     background-repeat: no-repeat;
     background-position: 80% 400px;
     background-size: 600px 456px;

@@ -1,7 +1,7 @@
 .luxury {
     padding-top: 0;
     padding-bottom: 70px;
-    background-image: url(../../img/luxury-img.png);
+    background-image: url(../img/luxury-img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 524px;
@@ -13,6 +13,7 @@
         padding-bottom: 170px;
         text-align: end;
         padding-top: 20px;
+        background-size: 100% 700px;
     }
 
      & .container {
@@ -111,7 +112,7 @@
             flex-direction: row;
             column-gap: 60px;
             row-gap: 0;
-            transform: translateY(180%);
+            transform: translate(10%, 180%);
         }
         
         @media screen and (min-width:1280px){
