@@ -1441,6 +1441,14 @@ body {
   .brand__frustration {
     font-size: 20px;
     width: 510px;
+    right: 160px;
+  }
+}
+@media screen and (min-width: 1880px) {
+  .brand__frustration {
+    font-size: 20px;
+    width: 510px;
+    right: 460px;
   }
 }
 .brand__newer-img {
@@ -1469,8 +1477,15 @@ body {
   .brand__div-tablet {
     display: block;
     position: absolute;
-    right: 300px;
+    right: 290px;
     bottom: 0px;
+  }
+}
+@media screen and (min-width: 1880px) {
+  .brand__div-tablet {
+    font-size: 20px;
+    width: 510px;
+    right: 460px;
   }
 }
 .brand__svg {
