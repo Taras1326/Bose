@@ -1,10 +1,19 @@
 .brand {
 position: relative;
 
+padding-top: 100px;
+
 &__img-div {
     @media screen and (min-width:768px){ 
   display: flex;
   gap: 60px;
+  margin-bottom: 90px;
+
+        }
+
+           @media screen and (min-width:1280px){ 
+  display: flex;
+  gap: 320px;
   margin-bottom: 90px;
 
         }
@@ -30,6 +39,12 @@ letter-spacing: 0.6px;
 
         }
 
+        @media screen and (min-width:1280px){ 
+font-size: 54px;
+letter-spacing: 1.08px;
+
+        }
+
 
 
     }
@@ -49,6 +64,10 @@ display: none;
 @media screen and (min-width:768px){ 
 display: block;
 width: 294px;
+        }
+        
+          @media screen and (min-width:1280px){ 
+font-size: 20px;
         }
     }
 
@@ -75,6 +94,10 @@ font-size: 16px;
 width: 294px;
 display: block;
         }
+
+          @media screen and (min-width:1280px){ 
+font-size: 20px;
+        }
     }
     
 
@@ -82,6 +105,7 @@ display: block;
         width: 280px;
         height: 251px;
         margin-bottom: 32px;
+
         
 
    
@@ -89,6 +113,12 @@ display: block;
      width: 354px;
 height: 524px;
 
+        }
+
+
+          @media screen and (min-width:1280px){ 
+width: 700px;
+height: 628px;
         }
     } 
 
@@ -120,15 +150,46 @@ width: 294px;
 
 @media screen and (min-width:768px){ 
 position: absolute;
-top: 585px;
-right: 190px;
+top: 810px;
+right: 170px;
         }
+
+                 @media screen and (min-width:1280px){ 
+font-size: 20px;
+width: 510px;
+        }
+
+        
     }
 
     &__newer-img {
         width: 280px;
 height: 343px;
 margin-bottom: 32px;
+
+
+ @media screen and (min-width:768px){ 
+width: 294px;
+height: 355px;
+        }
+    }
+
+    &__div-tablet {
+        display: none;
+
+        @media screen and (min-width:768px){ 
+display: block;
+position: absolute;
+right: 190px;
+bottom: 0px;
+        }
+
+         @media screen and (min-width:1280px){ 
+display: block;
+position: absolute;
+right: 300px;
+bottom: 0px;
+        }
     }
 
     &__svg {
@@ -137,6 +198,10 @@ margin-bottom: 32px;
 height: 25px;
 margin-bottom: 24px;
 
+
+@media screen and (min-width:768px){ 
+margin-bottom: 52px;
+        }
     }
 
 
@@ -149,6 +214,15 @@ font-style: normal;
 font-weight: 600;
 line-height: 125%;
 margin-bottom: 16px;
+@media screen and (min-width:768px){ 
+width: 294px;
+        }
+
+        @media screen and (min-width:1280px){ 
+width: 382px;
+font-size: 28px;
+        }
+
     }
 
     &__text-mini {
