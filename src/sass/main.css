@@ -1586,4 +1586,124 @@ body {
   max-height: 0;
   overflow: hidden;
   list-style: none;
+}
+
+.footer {
+  padding-top: 72px;
+  padding-bottom: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Gilroy", sans-serif;
+  color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 170px;
+    padding-bottom: 72px;
+  }
+}
+.footer__container {
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__container {
+    padding-left: 190px;
+    padding-right: 80px;
+  }
+}
+.footer__mobile {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 52px;
+}
+@media screen and (min-width: 768px) {
+  .footer__mobile {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__mobile {
+    justify-content: start;
+  }
+}
+.footer__first {
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .footer__first {
+    margin-bottom: 0px;
+    margin-right: 139px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__first {
+    display: flex;
+    margin-right: 50px;
+  }
+}
+.footer__second {
+  text-align: right;
+}
+@media screen and (min-width: 768px) {
+  .footer__second {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__second {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__select {
+    display: flex;
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+}
+.footer__select__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 1280px) {
+  .footer__select__item:not(:last-child) {
+    margin-bottom: 0px;
+    margin-right: 50px;
+  }
+}
+.footer__select__item:hover, .footer__select__item:focus {
+  color: #df3d3a;
+  text-decoration: none;
+  outline: transparent;
+}
+.footer__primary {
+  font-family: "Roboto";
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer__select__link {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 20px */
+}
+.footer__select__link:hover, .footer__select__link:focus {
+  color: #df3d3a;
+  text-decoration: none;
+  outline: transparent;
 }/*# sourceMappingURL=main.css.map */
