@@ -1610,6 +1610,45 @@ body {
   line-height: 125%;
 }
 
+.reviews {
+  padding-top: 170px;
+}
+.reviews__box {
+  display: flex;
+  gap: 150px;
+}
+.reviews__img {
+  width: 920px;
+  height: 590px;
+}
+.reviews__title {
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.reviews__title-mini {
+  color: #DF3D3A;
+  font-family: Gilroy;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+.reviews__text {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+
 .faq {
   padding-top: 16px;
   padding-bottom: 52px;
