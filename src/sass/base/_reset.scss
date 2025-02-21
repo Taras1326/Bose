@@ -6,6 +6,27 @@ html, body {
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(255,62,62)
+    
+}
+
+::-moz-selection {
+    background-color: gray;
+    color: #fff
+}
+
+::selection {
+    background-color: gray;
+    color: #fff
+}
+
 img {
     display: block;
 }
