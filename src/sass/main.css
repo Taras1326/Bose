@@ -2024,8 +2024,21 @@ body {
 .radio__img {
   position: absolute;
   opacity: 0;
-  height: auto;
   pointer-events: none;
+}
+@media screen and (max-width: 480px) {
+  .radio__img {
+    width: 280px;
+    height: 265px;
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 76px) {
+  .radio__img {
+    width: 648px;
+    height: 446px;
+    flex-shrink: 0;
+  }
 }
 @media screen and (max-width: 1439px) {
   .radio__img {
@@ -2336,8 +2349,11 @@ body {
     width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 
+
 .meet:hover,
 .meet:focus {
+
+
   color: #c0c0c0;
 }
 .meet::after {
