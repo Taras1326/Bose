@@ -553,6 +553,8 @@
     border-right-color: rgba(255, 255, 255, 0.9);
     transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
   }
+  
+
 
   &:hover::after {
     border-bottom-color: rgba(255, 255, 255, 0.9);
@@ -584,3 +586,4 @@
     transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
   }
 }
+
