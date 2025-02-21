@@ -1,0 +1,96 @@
+<section class="order" id="order">
+    <div class="container order__container">
+        <h2 class="order__title title">bose nc 700</h2>
+        <div class="order__content-wrap">
+            <input class="hidden radio__input" type="radio" id="radio-1" name="radio" checked="">
+            <label class="dark radio__label" for="radio-1">
+                <img class="radio__img" src="../img/headphones-black.png" loading="lazy" alt="Headphones">
+            </label>
+            <input class="hidden radio__input" type="radio" id="radio-2" name="radio">
+            <label class="light radio__label" for="radio-2">
+                <img class="radio__img" src="../img/headphones-white.png" loading="lazy" alt="Headphones">
+            </label>
+            <ul class="order__list">
+                <li class="order__list__item">
+                    <button class="button order__list__button" type="button">
+                        <span class="order__button-text">Availability in stores</span>
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="23"
+                            viewBox="0 0 22 23" fill="none">
+                            <path d="M1 21.4062L21 1.40625M21 1.40625L1 1.40625M21 1.40625L21 21.4062" stroke="#DF3D3A"
+                                stroke-width="2" />
+                        </svg>
+                    </button>
+                </li>
+                <li class="order__list__item">
+                    <a href="#characteristics" class="button order__list__button">
+                        <span class="order__button-text">Characteristics</span>
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="23"
+                            viewBox="0 0 22 23" fill="none">
+                            <path d="M1 21.4062L21 1.40625M21 1.40625L1 1.40625M21 1.40625L21 21.4062" stroke="#DF3D3A"
+                                stroke-width="2" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="order__list__item">
+                    <button class="button order__list__button" type="button">
+                        <span class="order__button-text">Payment and delivery methods</span>
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="23"
+                            viewBox="0 0 22 23" fill="none">
+                            <path d="M1 21.4062L21 1.40625M21 1.40625L1 1.40625M21 1.40625L21 21.4062" stroke="#DF3D3A"
+                                stroke-width="2" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <p class="order__price">14 999 UAH</p>
+            <button class="button order__button" type="submit" data-modal-nc-open>
+                <span class="order__button__text"> Order</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<div class="backdrop" data-nc-modal>
+    <div class="modal"> 
+        <button class="modal__btn" type="button" data-modal-nc-close> 
+            <svg contenteditable="modal-btn__icon" class="modal__icon" width="30" height="30">
+                <use href="../img/symbol-defs.svg#close"></use>
+            </svg> 
+        </button>
+        <form class="form" action="#">
+            <div class="item-wrapper">
+                <div class="field form__group"> 
+                    <input type="text" class="form__field" placeholder="Name" name="name"
+                        id="name" required=""> 
+                        <label for="name" class="form__label">Your name</label> 
+                    </div>
+                <div class="field form__group"> 
+                    <input type="email" class="form__field" placeholder="email" name="email" id="email" required=""> 
+                        <label for="email" class="form__label">Your e-mail</label> 
+                    </div>
+                <div class="field form__group"> 
+                    <textarea type="text" class="form__field form__field--pading" placeholder="message" name="message" id="message" required="" rows="4"></textarea> 
+                        <label for="message" class="form__label">Send us a message</label> 
+                    </div>
+            </div>
+            <div class="form-check"> 
+                <label class="form-check__item"> 
+                    <input class="form-check__field" type="checkbox" name="agreement" value="agree"> 
+                        <span class="icon-box">
+                            <svg class="form__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                                <path d="M2 13L9.19156 20.1916C9.61949 20.6195 10.3265 20.5722 10.6936 20.0911L24.5 2" stroke="#DF3D3A" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                    </span> 
+                        <span class="form-check__desrciption">I agree to the 
+                            <a class="form-check__link" href="#">privacy policy</a>
+                        </span> 
+                        </label> 
+                    </div> 
+                    <button class="draw form__btn meet" type="submit">send</button>
+        </form>
+    </div>
+</div>
