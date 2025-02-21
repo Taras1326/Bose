@@ -565,22 +565,5 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
-    padding-bottom: 90px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-bottom: 100px;
-  }
-  @media screen and (min-width: 1440px) {
-    padding-bottom: 170px;
-  }
-
   
-
-  &:hover::after {
-    border-bottom-color: rgba(255, 255, 255, 0.9);
-    border-left-color: rgba(255, 255, 255, 0.9);
-    transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
-  }
-}
 
