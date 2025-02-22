@@ -37,6 +37,7 @@
     line-height: 120%; /* 64.8px */
     letter-spacing: 1.08px;
     text-transform: uppercase;
+    animation: letterSpacingAnimation 5sease-in-out infinite;
 
     @media screen and (max-width: 768px) {
       text-align: center;
@@ -230,8 +231,6 @@
 .radio__input:checked + .radio__label .radio__img {
   opacity: 1;
 }
-
-
 
 
 
