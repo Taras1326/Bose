@@ -37,6 +37,8 @@
     text-transform: uppercase;
     color: #e7e7e7;
     margin-bottom: 32px;
+    // animation-duration: 2000ms;
+    animation: letterSpacingAnimation 2s ease-in-out infinite;
 
     @media screen and (min-width: 768px) {
       font-size: 30px;
@@ -348,3 +350,19 @@
   border-left-color: rgba(255, 255, 255, 0.9);
   transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
 }
+
+
+
+
+
+@keyframes letterSpacingAnimation {
+    0% {
+        letter-spacing: 1.36px;
+    }
+    50% {
+        letter-spacing: 4px;
+    }
+    100% {
+        letter-spacing: 1.36px;
+    }
+    }
