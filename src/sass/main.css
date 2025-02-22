@@ -1692,6 +1692,100 @@ body {
   line-height: 125%;
 }
 
+.reviews {
+  padding-top: 170px;
+}
+@media screen and (max-width: 1279px) {
+  .reviews {
+    padding-top: 168px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reviews {
+    padding-top: 55px;
+  }
+}
+.reviews__box {
+  display: flex;
+  gap: 150px;
+}
+@media screen and (max-width: 1279px) {
+  .reviews__box {
+    display: block;
+    position: relative;
+  }
+}
+.reviews__img {
+  width: 920px;
+  height: 590px;
+}
+@media screen and (max-width: 1279px) {
+  .reviews__img {
+    margin-bottom: 32px;
+    width: 648px;
+    height: 417px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reviews__img {
+    width: 280px;
+    height: 180px;
+  }
+}
+.reviews__title {
+  color: #E7E7E7;
+  font-family: Gilroy;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1279px) {
+  .reviews__title {
+    position: absolute;
+    font-size: 30px;
+    bottom: 640px;
+    letter-spacing: 0.6px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reviews__title {
+    bottom: 410px;
+  }
+}
+.reviews__title-mini {
+  color: #DF3D3A;
+  font-family: Gilroy;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+.reviews__text {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 1279px) {
+  .reviews__text {
+    width: 530px;
+    margin-bottom: 50px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reviews__text {
+    margin-bottom: 30px;
+    width: 258px;
+  }
+}
+
 .faq {
   padding-top: 16px;
   padding-bottom: 52px;
