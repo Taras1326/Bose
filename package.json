@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build --base=/Appll/",
+    "build": "vite build --base=/appll/",
     "preview": "vite preview"
   },
   "devDependencies": {
