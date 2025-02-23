@@ -44,7 +44,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: 17.5px;
-      
+      transition: transform .25s cubic-bezier(0.455, 0.03, 0.515, 0.955);          
 @media screen and (min-width:768px){
   width: 253px;   
   font-size: 16px;      
@@ -56,6 +56,10 @@
 }
   }
 
+  &__text:hover {
+    transform: scale(1.1);
+     }
+
   &__subtext {
       color: rgba(255, 255, 255, 0.80);
       font-size: 14px;
@@ -64,6 +68,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px;
 width: 93px;
+transition: transform .25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
 @media screen and (min-width:768px){
   width: 110px;
@@ -77,6 +82,9 @@ width: 93px;
 }
   }
 
+  &__subtext:hover {
+ transform: scale(1.050);
+  }
 
   &__box {
       @media screen and (min-width:768px){
@@ -98,6 +106,7 @@ text-transform: uppercase;
 width: 234px;
 margin-bottom: 32px;
 font-family: Gilroy, sans-serif;
+animation: change 5s infinite;
 @media screen and (min-width:768px){
   font-size: 42px;
   line-height: 48px;
@@ -113,6 +122,17 @@ margin-bottom: 40px;
  letter-spacing: 1.48px;
  margin-bottom: 86px;
   }
+}
+
+@keyframes change {
+    0% {
+        text-shadow: 0 0 6px black;
+        transform: scale(1)
+    }
+    50% {
+        text-shadow: 0 0 7px #ffffff;
+        transform: scale(1.2);
+    }
 }
 
 &__button {
@@ -156,6 +176,7 @@ transition: background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1), background-
   margin-left: auto;
   margin-right: auto;
   margin-top: 32px;
+  animation: hero-img 2s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate; 
 @media screen and (min-width:768px){
   width: 370px;
 height: 394px;
@@ -168,6 +189,15 @@ margin-top: 0;
   margin-top: 0;
 }
 }
+
+@keyframes hero-img {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.05);
+  }
+} 
 }
 
 
@@ -223,6 +253,7 @@ margin-top: 0;
 
 
       @media screen and (min-width: 480px) {
+        top: 50%;
         width: 350px;
         height: 450px;
         padding: 80px 40px;
@@ -355,8 +386,8 @@ opacity: 0;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: 8px;
-  left: 20px;
+  top: 11px;
+  left: 18px;
   transform: translate(-50%, -50%) scale(0);
   transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -431,6 +462,7 @@ opacity: 0;
     text-transform: uppercase;
     position: relative;
     margin-top: 70px;
+    transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1), transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   
     &::before,
     &::after {
@@ -443,7 +475,7 @@ opacity: 0;
   }
   
   .draw {
-    transition: color 0.25s;
+    // transition: color 0.25s;
   
     &::before,
     &::after {
@@ -464,7 +496,9 @@ opacity: 0;
   
     &:hover,
     &:focus {
-      background-color: #df3d3a;
+      color: #b5302d;
+      background-color: transparent;
+      transform: translateY(30%);
       // border: 2px solid #c0c0c0;
     }
   

@@ -327,7 +327,7 @@
 
 
 
-.backdrop {
+.backdropp {
   position: fixed;
   top: 0;
   left: 0;
@@ -336,7 +336,7 @@
   height: 100%;
   background-color: rgba(210, 210, 210, 0.512);
 
-  opacity: 1;
+  transform: scale(0);
   visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -356,10 +356,11 @@
   }
 }
 
-.modal {
+.modall {
   position: relative;
   padding: 50px 40px;
-
+  // opacity: 0;
+  transform: scale(0);
   background-color: #191919;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
