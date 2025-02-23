@@ -683,6 +683,7 @@ body {
   letter-spacing: 0.42px;
   text-underline-offset: 3px;
   text-decoration: underline;
+  transition: color 2s cubic-bezier(0.215, 0.61, 0.355, 1), margin-left 3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 @media screen and (min-width: 488px) {
   .backdrop__links {
@@ -705,6 +706,10 @@ body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
 }
+.backdrop__links:hover {
+  color: #df3d3a;
+  margin-left: 3px;
+}
 .backdrop .ds {
   display: flex;
   justify-content: center;
@@ -723,6 +728,7 @@ body {
   text-transform: uppercase;
   position: relative;
   margin-top: 70px;
+  transition: color 2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 .backdrop .form__btn::before, .backdrop .form__btn::after {
   box-sizing: inherit;
@@ -747,7 +753,8 @@ body {
   right: 0;
 }
 .backdrop .draw:hover, .backdrop .draw:focus {
-  background-color: #df3d3a;
+  background-color: transparent;
+  color: #df3d3a;
 }
 .backdrop .draw:hover::before, .backdrop .draw:hover::after {
   width: 100%;
