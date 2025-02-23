@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     
     <script type="module" crossorigin src="/appll/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/appll/assets/index-876e3677.css">
+    <link rel="stylesheet" href="/appll/assets/index-151b00b1.css">
   </head>
   <body>
     <div class="cursor"></div>
@@ -82,12 +82,45 @@
   </div>
 </section>
 
-
-<!-- <div class="backdrop is-hidden"  data-modal>
+<div class="backdrop is-hidden"  data-modal>
+  <div class="backdrop__modal ">
+    <form  action="https://api.web3forms.com/submit" method="POST" class="backdrop__form">
+      <input type="hidden" name="access_key" value="ce1201de-7164-4780-86de-73433d9e954b">
+      <div class="field form__group">
+        <input type="text" class="form__field" placeholder="Name" name="name" id="name" required="">
+        <label for="name" class="form__label">Your name</label>
+    </div>
+      <div class="field form__group">
+        <input type="text" class="form__field" placeholder="Name" name="name" id="name" required="">
+        <label for="name" class="form__label">Your e-mail</label>
+    </div>
+      <div class="field form__group">
+        <textarea type="text" class="form__field form__field--pading" placeholder="message" name="message"
+            id="message" required="" rows="4"></textarea>
+        <label for="message" class="form__label">Send us a message</label>
+    </div>
+      <label class="backdrop__wrapperr">
+        <input type="checkbox" class="real__checkbox">
+        <span class="custom__checkbox">
+      </span>
+        <span class="backdrop__checked">I agree to the</span>
+        <a href="https://www.facebook.com/"  target="_blank" class="backdrop__links">privacy policy</a>
+      </label>
+      <div class="ds">
+        <button class="draw form__btn meet" type="submit">send</button>
+      </div>
+    </form>
+    <button type="button" class="backdrop__closee" data-modal-close>
+      <svg class="backdrop__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M18.0915 5.36396C18.482 5.75449 18.482 6.38765 18.0915 6.77818L13.1425 11.7272L18.0915 16.6777C18.482 17.0682 18.482 17.7014 18.0915 18.0919C17.701 18.4824 17.0678 18.4824 16.6773 18.0919L11.7282 13.1414L6.77779 18.0919C6.38727 18.4824 5.7541 18.4824 5.36358 18.0919C4.97306 17.7014 4.97306 17.0682 5.36358 16.6777L10.314 11.7272L5.36358 6.77817C4.97306 6.38764 4.97306 5.75448 5.36358 5.36396C5.75411 4.97343 6.38727 4.97343 6.7778 5.36396L11.7282 10.313L16.6773 5.36396C17.0678 4.97344 17.701 4.97344 18.0915 5.36396Z" fill-opacity="0.8"/>
+        </svg>
+    </button>
+  </div>
+</div>
+<!-- <div class="backdrop is-hidden" data-modal>
     <div class="backdrop__modal">
       <form  action="https://api.web3forms.com/submit" method="POST" class="backdrop__form">
          <div class="backdrop__group">
-        <input type="hidden" name="access_key" value="ce1201de-7164-4780-86de-73433d9e954b">
         <label for="tell" class="backdrop__label">Your name</label>
         <div class="backdrop__wrapper">
         <input type="text" id="tell" class="backdrop__input" required>
