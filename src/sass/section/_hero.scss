@@ -44,6 +44,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: 17.5px;
+     
       
 @media screen and (min-width:768px){
   width: 253px;   
@@ -54,6 +55,9 @@
   font-size: 16px;
   width: 321px;
 }
+
+
+
   }
 
   &__subtext {
@@ -98,6 +102,7 @@ text-transform: uppercase;
 width: 234px;
 margin-bottom: 32px;
 font-family: Gilroy, sans-serif;
+animation: hero__button 2s infinite;
 @media screen and (min-width:768px){
   font-size: 42px;
   line-height: 48px;
@@ -112,6 +117,20 @@ margin-bottom: 40px;
  line-height: 74px;
  letter-spacing: 1.48px;
  margin-bottom: 86px;
+  }
+
+
+
+  @keyframes hero__button {
+    0% {
+        transform: scale3d(1, 1, 2);
+    }
+    50% {
+        transform: scale3d(1.20, 1.20, 0.95);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
   }
 }
 
@@ -557,3 +576,9 @@ opacity: 0;
       fill: white;
     }
 }
+
+
+
+
+
+
