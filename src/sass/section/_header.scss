@@ -1,10 +1,15 @@
 .header {
-    padding-top: 29px;
-    padding-bottom: 32px;
-    @media screen and (min-width:768px){
-        padding-top: 50px;
-        padding-bottom: 51px;
-     }
+  padding-top: 30px;
+  padding-bottom: 32px;
+  @media screen and (min-width: 708px) {
+      padding-top: 50px;
+      padding-bottom: 52px;
+  }
+
+  @media screen and (min-width: 1320px) {
+      padding-top: 64px;
+      padding-bottom: 74px;
+  }
 
      #buttons {
       display: flex;
@@ -40,12 +45,21 @@
     &__img {
         width: 130px;
         height: 15.236px;
-        transition: transform 2s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+        animation: pulseScale 1.5s infinite alternate ease-in-out;
     }
 
+    @keyframes pulseScale {
+      0% {
+          transform: scale(1);
+      }
+      100% {
+          transform: scale(1.1);
+      }
+  }
+
     &__img:hover {
-        transform: scale(1.2);
-        opacity: 0.8;
+        opacity: 0.6;
     }
 
 
@@ -97,7 +111,12 @@
     }
 
     &__link:hover {
-        color: #b5302d;
+      color: transparent;
+      transition-property: color;
+      transition-duration: 0.25s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      background: linear-gradient(to right, rgb(223, 61, 58), rgb(255, 144, 144), rgb(223, 61, 58)) center center / cover text;
+      background-position: center center;
     }
 
     &__icon {
