@@ -1476,6 +1476,8 @@ body {
     background-image: url(../img/linia.png);
     background-repeat: no-repeat;
     background-position: right bottom;
+    padding-top: 100px;
+    padding-bottom: 117px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1513,7 +1515,7 @@ body {
   }
 }
 .guarantes__title {
-  color: #E7E7E7;
+  color: #e7e7e7;
   font-family: Gilroy;
   font-size: 24px;
   font-weight: 600;
@@ -1541,7 +1543,7 @@ body {
   margin-bottom: 24px;
 }
 .guarantes__title-mini {
-  color: #E7E7E7;
+  color: #e7e7e7;
   font-family: Gilroy;
   font-size: 28px;
   font-weight: 600;
@@ -2488,9 +2490,10 @@ body {
   }
 }
 @media screen and (min-width: 1280px) {
-  .modall {
-    width: 500px;
-  }
+
+  .modal {
+    width: 600px;
+
 }
 
 .modal__btn {
@@ -2597,54 +2600,118 @@ body {
   margin-bottom: 70px;
 }
 
-.form-check__item {
-  display: flex;
+.backdrop__wrapperr {
   justify-content: center;
-  align-items: center;
-}
-
-.form-check__field {
-  position: absolute;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.icon-box {
-  position: relative;
+  margin-top: 20px;
   display: block;
-  margin-right: 8px;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) {
+  .backdrop__wrapperr {
+    display: flex;
+    margin-top: 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .backdrop__wrapperr {
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .backdrop__wrapperr {
+    font-size: 14px;
+    margin-top: 50px;
+  }
+}
+
+.real__checkbox {
+  opacity: 0;
+}
+
+.custom__checkbox {
+  border: 2px solid rgba(255, 255, 255, 0.8);
   width: 30px;
   height: 28px;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 4px;
 }
 
-.form__icon {
-  display: none;
+.custom__checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 22.5px;
+  height: 19px;
+  background-image: url(../../public/tickk.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
-  top: -5px;
-  right: -5px;
+  top: 8px;
+  left: 20px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.form-check__field:checked .icon-box .form__icon {
-  display: block;
+.real__checkbox:checked + .custom__checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
 }
 
-.form-check__desrciption {
+.backdrop__checked {
+  color: #e9edfa;
   font-size: 16px;
-  line-height: 1.62;
-  color: #e9edfa;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+@media screen and (min-width: 1280px) {
+  .backdrop__checked {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
 }
 
-.form-check__link {
-  color: #e9edfa;
-  text-decoration: underline;
+.backdrop__links {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
   text-underline-offset: 3px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-decoration: underline;
+  transition: color 2s cubic-bezier(0.215, 0.61, 0.355, 1), margin-left 3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.form-check__link:hover, .form-check__link:focus {
+@media screen and (min-width: 488px) {
+  .backdrop__links {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
+@media screen and (min-width: 768px) {
+  .backdrop__links {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .backdrop__links {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.backdrop__links:hover {
   color: #df3d3a;
+  margin-left: 3px;
 }
 
 .form__btn {
@@ -2826,6 +2893,7 @@ body {
   }
 }
 .feedback__button {
+  margin-top: 56px;
   display: inline-block;
   width: 100%;
   height: 58px;
@@ -2918,89 +2986,108 @@ body {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__policy {
-  font-family: "Gilroy";
-  color: rgba(255, 255, 255, 0.8);
-  cursor: pointer;
-  margin-top: 40px;
-  margin-bottom: 40px;
+.form .backdrop__wrapperr {
+  justify-content: center;
+  margin-top: 20px;
+  display: block;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) {
+  .form .backdrop__wrapperr {
+    display: flex;
+    margin-top: 70px;
+  }
 }
 @media screen and (min-width: 768px) {
-  .form__policy {
-    margin-bottom: 52px;
+  .form .backdrop__wrapperr {
+    margin-top: 80px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .form__policy {
-    font-size: 16px;
-    line-height: 1.6;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
+  .form .backdrop__wrapperr {
+    font-size: 14px;
+    margin-top: 50px;
   }
 }
-.form__policys {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: Gilroy;
-  font-size: 16px;
-  font-style: normal;
-  cursor: pointer;
-  font-weight: 400;
-  line-height: 160%; /* 25.6px */
+.form .real__checkbox {
+  opacity: 0;
 }
-.form__policy-link {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%; /* 17.5px */
-  margin-left: 4px;
-  color: inherit;
-  text-decoration: underline;
-  color: #e9edfa;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form__policy-link:hover {
-  color: #df3d3a;
-}
-.form__policy-link:focus {
-  margin-left: 4px;
-  color: inherit;
-  outline: 1px solid #df3d3a;
-}
-.form__checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-}
-.form__check-icon {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  margin: 0;
+.form .custom__checkbox {
+  border: 2px solid rgba(255, 255, 255, 0.8);
   width: 30px;
   height: 28px;
-  padding-left: 6px;
-  padding-bottom: 9px;
-  background-color: #191919;
-  border: 2px solid #e9edfa;
-  border-width: 2px;
-  border-radius: 2px;
-  margin-right: 29px;
+  display: inline-block;
+  position: relative;
   vertical-align: middle;
+  margin-right: 4px;
 }
-.form__check-icon + .form__icon {
-  display: none;
+.form .custom__checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 22.5px;
+  height: 19px;
+  background-image: url(../../public/tickk.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.form__checkbox:checked + .form__check-icon, .form__icon {
-  display: block;
+.form .real__checkbox:checked + .custom__checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+.form .backdrop__checked {
+  color: #e9edfa;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+@media screen and (min-width: 1280px) {
+  .form .backdrop__checked {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
+.form .backdrop__links {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  text-underline-offset: 3px;
+  text-decoration: underline;
+  transition: color 2s cubic-bezier(0.215, 0.61, 0.355, 1), margin-left 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@media screen and (min-width: 488px) {
+  .form .backdrop__links {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form .backdrop__links {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .form .backdrop__links {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
+.form .backdrop__links:hover {
+  color: #df3d3a;
+  margin-left: 3px;
 }
 
 @keyframes letterSpacingAnimation {

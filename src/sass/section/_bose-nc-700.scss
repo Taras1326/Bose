@@ -409,7 +409,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 500px;
+    width: 600px;
   }
 }
 
@@ -516,54 +516,181 @@
 .form-check {
   margin-bottom: 70px;
 }
-.form-check__item {
-  display: flex;
+
+
+
+
+.backdrop__wrapperr {
   justify-content: center;
+  margin-top: 20px;
+  display: block;
   align-items: center;
-}
-.form-check__field {
-  position: absolute;
-  appearance: none;
-}
-.icon-box {
-  position: relative;
-  display: block;
-  margin-right: 8px;
+  gap: 8px;
+  flex-wrap: wrap;
 
-  width: 30px;
-  height: 28px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    margin-top: 70px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    margin-top: 80px;
+  }
 
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  cursor: pointer;
-}
-
-.form__icon {
-  display: none;
-  position: absolute;
-  top: -5px;
-  right: -5px;
-}
-
-.form-check__field:checked .icon-box .form__icon {
-  display: block;
-}
-
-.form-check__desrciption {
-  font-size: 16px;
-  line-height: 1.62;
-  color: #e9edfa;
-}
-.form-check__link {
-  color: #e9edfa;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: #df3d3a;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    margin-top: 50px;
   }
 }
+
+
+.real__checkbox {
+opacity: 0;
+}
+
+.custom__checkbox {
+border: 2px solid rgba(255, 255, 255, .8);
+width: 30px;
+height: 28px;
+display: inline-block;
+position: relative;
+vertical-align: middle;
+margin-right: 4px;
+}
+
+.custom__checkbox::before {
+content: "";
+display: inline-block;
+width: 22.5px;
+height: 19px;
+background-image: url(../../public/tickk.svg);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top: 8px;
+left: 20px;
+transform: translate(-50%, -50%) scale(0);
+transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.real__checkbox:checked + .custom__checkbox::before {
+transform: translate(-50%, -50%) scale(1);
+}
+
+
+.backdrop__checked {
+  color: #e9edfa;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+  
+  
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+}
+
+.backdrop__links {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  text-underline-offset: 3px;
+
+  text-decoration: underline;
+  transition: color 2s cubic-bezier(0.215, 0.610, 0.355, 1), margin-left 3s cubic-bezier(0.215, 0.610, 0.355, 1);
+  
+  @media screen and (min-width: 488px) {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.71;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+}
+
+.backdrop__links:hover {
+  color: #df3d3a;
+  margin-left: 3px;
+}
+
+
+
+
+
+
+
+
+// .form-check__item {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .form-check__field {
+//   position: absolute;
+//   appearance: none;
+// }
+// .icon-box {
+//   position: relative;
+//   display: block;
+//   margin-right: 8px;
+
+//   width: 30px;
+//   height: 28px;
+
+//   border: 2px solid rgba(255, 255, 255, 0.8);
+//   cursor: pointer;
+// }
+
+// .form__icon {
+//   display: none;
+//   position: absolute;
+//   top: -5px;
+//   right: -5px;
+// }
+
+// .form-check__field:checked .icon-box .form__icon {
+//   display: block;
+// }
+
+// .form-check__desrciption {
+//   font-size: 16px;
+//   line-height: 1.62;
+//   color: #e9edfa;
+// }
+// .form-check__link {
+//   color: #e9edfa;
+//   text-decoration: underline;
+//   text-underline-offset: 3px;
+
+//   &:hover,
+//   &:focus {
+//     color: #df3d3a;
+//   }
+// }
+
+
+
+
+
 // .form__btn {
 //   padding: 22px 0;
 //   width: 100%;
