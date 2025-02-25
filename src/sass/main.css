@@ -91,7 +91,8 @@ body {
   animation: move 6s infinite alternate;
   display: none;
 }
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 1280px) {
   .cursor {
     display: block;
   }
@@ -145,13 +146,19 @@ body {
 }
 
 .header {
-  padding-top: 29px;
+  padding-top: 30px;
   padding-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 708px) {
   .header {
     padding-top: 50px;
-    padding-bottom: 51px;
+    padding-bottom: 52px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .header {
+    padding-top: 64px;
+    padding-bottom: 74px;
   }
 }
 .header #buttons {
@@ -186,11 +193,19 @@ body {
 .header__img {
   width: 130px;
   height: 15.236px;
-  transition: transform 2s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: pulseScale 1.5s infinite alternate ease-in-out;
+}
+@keyframes pulseScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 .header__img:hover {
-  transform: scale(1.2);
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .header__nav {
   display: none;
@@ -231,7 +246,12 @@ body {
   }
 }
 .header__link:hover {
-  color: #b5302d;
+  color: transparent;
+  transition-property: color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(to right, rgb(223, 61, 58), rgb(255, 144, 144), rgb(223, 61, 58)) center center/cover text;
+  background-position: center center;
 }
 .header__icon {
   display: block;
@@ -387,6 +407,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 17.5px;
+  transition: transform 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 @media screen and (min-width: 768px) {
   .hero__text {
@@ -400,6 +421,9 @@ body {
     width: 321px;
   }
 }
+.hero__text:hover {
+  transform: scale(1.1);
+}
 .hero__subtext {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
@@ -408,6 +432,7 @@ body {
   font-weight: 400;
   line-height: 20px;
   width: 93px;
+  transition: transform 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 @media screen and (min-width: 768px) {
   .hero__subtext {
@@ -420,6 +445,9 @@ body {
     width: 110px;
     font-size: 16px;
   }
+}
+.hero__subtext:hover {
+  transform: scale(1.05);
 }
 @media screen and (min-width: 1280px) {
   .hero__box {
@@ -436,6 +464,9 @@ body {
   width: 234px;
   margin-bottom: 32px;
   font-family: Gilroy, sans-serif;
+  animation: change 5s infinite;
+  animation: hero__button 2s infinite;
+
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -453,6 +484,27 @@ body {
     line-height: 74px;
     letter-spacing: 1.48px;
     margin-bottom: 86px;
+  }
+}
+
+@keyframes change {
+  0% {
+    text-shadow: 0 0 6px black;
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 0 0 7px #ffffff;
+    transform: scale(1.2);
+
+@keyframes hero__button {
+  0% {
+    transform: scale3d(1, 1, 2);
+  }
+  50% {
+    transform: scale3d(1.2, 1.2, 0.95);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }
 .hero__button {
@@ -494,6 +546,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 32px;
+  animation: hero-img 2s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
 }
 @media screen and (min-width: 768px) {
   .hero__img {
@@ -507,6 +560,14 @@ body {
     width: 570px;
     height: 598px;
     margin-top: 0;
+  }
+}
+@keyframes hero-img {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
   }
 }
 
@@ -547,6 +608,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   .backdrop__modal {
+    top: 50%;
     width: 350px;
     height: 450px;
     padding: 80px 40px;
@@ -676,8 +738,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: 8px;
-  left: 20px;
+  top: 11px;
+  left: 18px;
   transform: translate(-50%, -50%) scale(0);
   transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -751,6 +813,7 @@ body {
   text-transform: uppercase;
   position: relative;
   margin-top: 70px;
+  transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1), transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: color 2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 .backdrop .form__btn::before, .backdrop .form__btn::after {
@@ -759,9 +822,6 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-.backdrop .draw {
-  transition: color 0.25s;
 }
 .backdrop .draw::before, .backdrop .draw::after {
   width: 0;
@@ -776,6 +836,9 @@ body {
   right: 0;
 }
 .backdrop .draw:hover, .backdrop .draw:focus {
+  color: #b5302d;
+  background-color: transparent;
+  transform: translateY(30%);
   background-color: transparent;
   color: #df3d3a;
 }
@@ -2124,12 +2187,37 @@ body {
   line-height: 120%; /* 64.8px */
   letter-spacing: 1.08px;
   text-transform: uppercase;
-  animation-duration: 2000ms;
-  animation: letterSpacingAnimation 2s ease-in-out infinite;
+  animation: letterSpacingAnimation 5s ease-in-out infinite;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .order__title {
-    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 36px */
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 480px) {
+  .order__title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 28.8px */
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+  }
+}
+@keyframes letterSpacingAnimation {
+  0% {
+    letter-spacing: 1.36px;
+  }
+  50% {
+    letter-spacing: 4px;
+  }
+  100% {
+    letter-spacing: 1.36px;
   }
 }
 .order__list {
@@ -2286,11 +2374,12 @@ body {
     flex-shrink: 0;
   }
 }
-@media screen and (max-width: 76px) {
+@media screen and (max-width: 767px) {
   .radio__img {
     width: 648px;
     height: 446px;
     flex-shrink: 0;
+    margin-top: 32px;
   }
 }
 @media screen and (max-width: 1439px) {
@@ -2300,7 +2389,6 @@ body {
     width: 648px;
     height: 446px;
     flex-shrink: 0;
-    margin-top: 32px;
     transform: translateX(-50%);
   }
 }
@@ -2327,17 +2415,6 @@ body {
   opacity: 1;
 }
 
-@keyframes letterSpacingAnimation {
-  0% {
-    letter-spacing: 1.36px;
-  }
-  50% {
-    letter-spacing: 4px;
-  }
-  100% {
-    letter-spacing: 1.36px;
-  }
-}
 @keyframes animate {
   0% {
     transform: translateY(0);
@@ -2364,24 +2441,24 @@ body {
     transform: translateY(0) translate(0) rotate(0);
   }
 }
-.backdrop {
+.backdropp {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(210, 210, 210, 0.512);
-  opacity: 1;
+  transform: scale(0);
   visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden {
+.backdropp.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 @media screen and (max-width: 767px) {
-  .backdrop {
+  .backdropp {
     padding-top: 93px;
     padding-bottom: 94px;
     padding-left: 15px;
@@ -2390,18 +2467,19 @@ body {
   }
 }
 
-.modal {
+.modall {
   position: relative;
   padding: 50px 40px;
+  transform: scale(0);
   background-color: #191919;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .modall {
   transform: translate(-50%, -50%) scale(1.1);
 }
 @media screen and (min-width: 768px) {
-  .modal {
+  .modall {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2412,9 +2490,10 @@ body {
   }
 }
 @media screen and (min-width: 1280px) {
+
   .modal {
     width: 600px;
-  }
+
 }
 
 .modal__btn {
@@ -2602,6 +2681,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.42px;
   text-underline-offset: 3px;
+
   text-decoration: underline;
   transition: color 2s cubic-bezier(0.215, 0.61, 0.355, 1), margin-left 3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -2625,6 +2705,8 @@ body {
     line-height: 1.71;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .backdrop__links:hover {
@@ -2646,6 +2728,7 @@ body {
   text-transform: uppercase;
   position: relative;
   vertical-align: middle;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__btn::before, .form__btn::after {
   box-sizing: inherit;
@@ -2657,6 +2740,7 @@ body {
 
 .draw {
   transition: color 0.25s;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .draw::before, .draw::after {
   border: 2px solid transparent;
